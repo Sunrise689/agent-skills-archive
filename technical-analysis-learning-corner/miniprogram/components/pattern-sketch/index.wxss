@@ -1,0 +1,7 @@
+.sketch-canvas {
+  width: 100%;
+  height: 310rpx;
+  display: block;
+  border-radius: 16rpx;
+  background: #eef7f8;
+}

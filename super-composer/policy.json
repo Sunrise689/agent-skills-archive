@@ -1,0 +1,12 @@
+{
+  "default_parallel": 6,
+  "window_sizes": [3],
+  "escalation_window_sizes": [2, 5],
+  "all_pairs_max_sentences": 50,
+  "nonadjacent_candidates_per_sentence": 5,
+  "decision_timeout_seconds": 3600,
+  "lanes": {
+    "minimax": {"profile_id": "CC-U", "model": "MiniMax-M3.1-Flash", "min": 8, "max": 10},
+    "openrouter": {"profile_id": "CC-U", "model": "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free", "min": 1, "max": 20}
+  }
+}

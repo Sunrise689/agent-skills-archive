@@ -1,0 +1,23 @@
+.contact-prompt {
+  position: relative;
+  z-index: 2;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 18rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14rpx 16rpx 14rpx 20rpx;
+  border: 1rpx solid rgba(41, 98, 255, .18);
+  border-radius: 16rpx;
+  background: rgba(248, 250, 255, .96);
+  box-shadow: 0 8rpx 24rpx rgba(41, 98, 255, .12);
+}
+.contact-prompt-main { min-width: 0; flex: 1; }
+.contact-prompt-label, .contact-prompt-email { display: block; }
+.contact-prompt-label { color: #2962ff; font-size: 20rpx; font-weight: 700; }
+.contact-prompt-email { margin-top: 3rpx; color: #7a86aa; font-size: 17rpx; }
+.contact-prompt-close { padding: 4rpx 8rpx 4rpx 16rpx; color: #9a9da6; font-size: 32rpx; line-height: 1; }

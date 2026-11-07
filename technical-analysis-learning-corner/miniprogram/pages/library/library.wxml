@@ -1,0 +1,117 @@
+<view class="library-page">
+  <contact-prompt></contact-prompt>
+  <view class="library-head">
+    <text class="overline latin">KNOWLEDGE BASE</text>
+    <view class="library-title">读懂价格语言</view>
+    <view class="library-copy">从一根K线，到一组形态，再到完整价格结构。</view>
+  </view>
+
+  <scroll-view class="section-tabs" scroll-x enhanced show-scrollbar="{{false}}">
+    <view class="section-tabs-inner">
+      <view
+        wx:for="{{sections}}"
+        wx:key="key"
+        class="section-tab {{activeSection === item.key ? 'active' : ''}}"
+        data-key="{{item.key}}"
+        bindtap="changeSection"
+      >{{item.label}}</view>
+    </view>
+  </scroll-view>
+
+  <view class="intro-panel">
+    <text class="intro-label">先理解概念</text>
+    <view class="intro-title">{{currentInfo.title}}</view>
+    <view class="intro-copy">{{currentInfo.copy}}</view>
+    <view class="intro-rule">
+      <text>判读原则</text>
+      <text>{{currentInfo.rule}}</text>
+    </view>
+  </view>
+
+  <view class="search-box">
+    <view class="search-mark"></view>
+    <input
+      value="{{keyword}}"
+      placeholder="搜索名称或定义"
+      bindinput="handleSearch"
+    />
+  </view>
+
+  <scroll-view wx:if="{{activeSection === 'candles'}}" class="category-strip" scroll-x enhanced show-scrollbar="{{false}}">
+    <view class="category-inner">
+      <view
+        wx:for="{{categories}}"
+        wx:key="key"
+        class="category-chip {{activeCategory === item.key ? 'active' : ''}}"
+        data-key="{{item.key}}"
+        bindtap="changeCategory"
+      >{{item.label}}</view>
+    </view>
+  </scroll-view>
+
+  <view class="result-meta">
+    <text>{{activeSection === 'basics' ? '基础概念' : activeSection === 'charts' ? '经典技术图形' : activeSection === 'indicators' ? '常用分析工具' : categoryLabels[activeCategory] || '全部技术形态'}}</text>
+    <text class="latin">{{visibleItems.length}}</text>
+  </view>
+
+  <view wx:if="{{activeSection === 'charts'}}" class="chart-legend">
+    <view><text class="legend-line price"></text><text>价格路径</text></view>
+    <view><text class="legend-line structure"></text><text>结构边界/颈线</text></view>
+    <view><text class="legend-dot resistance"></text><text>阻力</text></view>
+    <view><text class="legend-line support"></text><text>支撑</text></view>
+    <view><text class="legend-arrow buy">↗</text><text>突破确认</text></view>
+  </view>
+
+  <view class="knowledge-list">
+    <view wx:for="{{visibleItems}}" wx:key="name" class="knowledge-item">
+      <view class="item-top">
+        <view>
+          <text class="item-type">
+            {{activeSection === 'basics' ? item.group : categoryLabels[item.category]}}
+          </text>
+          <view class="item-name {{item.direction || 'neutral'}}">{{item.displayName || item.name}}</view>
+        </view>
+        <text wx:if="{{item.direction}}" class="direction-tag {{item.direction}}">
+          {{item.direction === 'bull' ? '偏多' : item.direction === 'bear' ? '偏空' : '中性'}}
+        </text>
+      </view>
+
+      <view wx:if="{{activeSection !== 'indicators'}}" class="sketch-wrap">
+        <pattern-sketch type="{{item.diagram}}" direction="{{item.direction || 'neutral'}}" />
+      </view>
+
+      <view class="definition">{{item.definition}}</view>
+      <view class="fact-row">
+        <text class="fact-label">{{activeSection === 'basics' ? '怎么理解' : activeSection === 'indicators' ? '怎么看' : '通常含义'}}</text>
+        <text>{{item.meaning}}</text>
+      </view>
+      <view class="fact-row">
+        <text class="fact-label">{{activeSection === 'basics' || activeSection === 'indicators' ? '记住' : '确认条件'}}</text>
+        <text>{{item.remember || item.confirmation}}</text>
+      </view>
+      <view wx:if="{{activeSection === 'indicators'}}" class="fact-row parameter-row">
+        <text class="fact-label">参数</text>
+        <text>{{item.parameters}}</text>
+      </view>
+      <view wx:if="{{activeSection === 'indicators'}}" class="fact-row source-row">
+        <text class="fact-label">来源</text>
+        <text>{{item.source}}</text>
+      </view>
+      <view wx:if="{{activeSection === 'charts'}}" class="fact-row trade-hint">
+        <text class="fact-label">参考位置</text>
+        <text>{{item.tradeHint}}</text>
+      </view>
+      <view wx:if="{{activeSection !== 'basics' && activeSection !== 'indicators'}}" class="source-note">
+        定义参考：{{item.sourceLabel}}
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{!visibleItems.length}}" class="empty-result">
+    没有找到相关内容，请换一个关键词。
+  </view>
+
+  <view class="library-footer">
+    内容参考传统K线分析体系、经典技术分析定义及项目知识库。形态是观察工具，不是确定性预测。
+  </view>
+</view>

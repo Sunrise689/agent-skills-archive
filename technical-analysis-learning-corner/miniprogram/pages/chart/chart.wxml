@@ -1,0 +1,87 @@
+<view class="chart-page">
+  <contact-prompt></contact-prompt>
+  <view class="page-heading">
+    <view>
+      <text class="page-kicker">图表分析</text>
+      <text class="page-title">从趋势开始</text>
+      <text class="page-copy">月线定方向，周线看力度，日线找位置。</text>
+    </view>
+    <view class="workspace-state">
+      <view class="service-dot {{demoMode ? 'demo' : 'live'}}"></view>
+      <text>{{demoMode ? '演示' : '已开放'}}</text>
+    </view>
+  </view>
+
+  <view class="hero-panel">
+    <view class="chart-preview">
+      <view class="chart-toolbar">
+        <view>
+          <text class="chart-title">K线结构预览</text>
+          <text class="chart-subtitle">趋势 · 形态 · 关键价位</text>
+        </view>
+        <view class="period-pills">
+          <text>M</text><text>W</text><text class="active">D</text>
+        </view>
+      </view>
+      <canvas type="2d" id="heroCanvas" class="hero-canvas"></canvas>
+      <view class="chart-legend">
+        <view class="legend-item"><view class="legend-dot bull-dot"></view><text>阳线</text></view>
+        <view class="legend-item"><view class="legend-dot bear-dot"></view><text>阴线</text></view>
+        <view class="legend-item"><view class="legend-line"></view><text>长期均线</text></view>
+        <text class="sketch-note">结构示意</text>
+      </view>
+    </view>
+    <view class="period-flow">
+      <view class="flow-item"><text class="flow-key">M</text><view><text class="flow-title">月线</text><text class="flow-copy">定方向</text></view></view>
+      <view class="flow-divider"></view>
+      <view class="flow-item"><text class="flow-key">W</text><view><text class="flow-title">周线</text><text class="flow-copy">看力度</text></view></view>
+      <view class="flow-divider"></view>
+      <view class="flow-item"><text class="flow-key">D</text><view><text class="flow-title">日线</text><text class="flow-copy">找位置</text></view></view>
+    </view>
+  </view>
+
+  <view class="search-panel" id="analysisSearch">
+    <view class="section-head">
+      <view><text class="section-kicker">开始分析</text><text class="section-title">输入市场代码</text></view>
+      <view class="source-state"><view class="source-dot {{demoMode ? 'demo' : 'live'}}"></view><text>{{sourceLabel}}</text></view>
+    </view>
+    <view class="search-row">
+      <view class="input-shell">
+        <text class="search-icon"></text>
+        <input class="symbol-input" focus="{{inputFocused}}" value="{{symbol}}" placeholder="例如 sh000001 或 us^GSPC" placeholder-class="input-placeholder" bindinput="handleInput" confirm-type="search" bindconfirm="startAnalysis" />
+      </view>
+      <button class="analyze-button" loading="{{loading}}" bindtap="startAnalysis">{{loading ? '分析中' : '分析'}}</button>
+    </view>
+    <view wx:if="{{symbolSuggestions.length}}" class="symbol-suggestions">
+      <text class="suggestion-title">可识别标的，点击使用</text>
+      <view wx:for="{{symbolSuggestions}}" wx:key="symbol" class="suggestion-item" data-symbol="{{item.symbol}}" bindtap="selectSymbolSuggestion">
+        <view class="suggestion-main"><text class="suggestion-name">{{item.name}}</text><text class="suggestion-type">{{item.type}}</text></view>
+        <text class="suggestion-code">{{item.display}}</text>
+      </view>
+    </view>
+    <text class="search-tip">支持 A股、指数、ETF、港股、美股及国际金价/油价；国际代码可输入 us^GSPC、usGC=F。</text>
+    <text class="service-note">提示：云端分析服务偶尔会有短暂卡顿；如未及时返回，请稍等片刻后再试，或多试几次。</text>
+  </view>
+
+  <view wx:if="{{loading}}" class="analysis-loading-card">
+    <view class="loading-orbit"><view class="loading-orbit-dot dot-one"></view><view class="loading-orbit-dot dot-two"></view><view class="loading-orbit-dot dot-three"></view><view class="loading-orbit-core">↗</view></view>
+    <view class="loading-copy"><text class="loading-title">正在梳理市场结构</text><text class="loading-subtitle">从月线、周线到日线，先看方向，再看细节</text><text class="loading-quote">“{{analysisQuotes[loadingQuoteIndex].text}}”</text><text class="loading-en">{{analysisQuotes[loadingQuoteIndex].en}}</text><text class="loading-source">{{analysisQuotes[loadingQuoteIndex].source}}</text></view>
+    <view class="loading-dots"><view></view><view></view><view></view></view>
+  </view>
+
+  <view class="quick-section">
+    <view class="section-head compact">
+      <view><text class="section-kicker">快捷标的</text><text class="section-title">快速开始</text></view>
+      <text class="section-meta">点击代码后分析</text>
+    </view>
+    <view class="watchlist-card">
+      <view class="watch-row" wx:for="{{quickSymbols}}" wx:key="symbol" data-symbol="{{item.symbol}}" bindtap="startQuickAnalysis">
+        <view class="symbol-avatar {{item.tone}}"><text>{{item.short}}</text></view>
+        <view class="watch-main"><text class="watch-name">{{item.name}}</text><text class="watch-type">{{item.type}}</text></view>
+        <view class="watch-code"><text>{{item.display}}</text><text class="watch-action">分析 →</text></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="risk-note"><view class="risk-line"></view><text>技术分析用于辅助理解市场结构，不构成收益承诺或投资建议。</text></view>
+</view>

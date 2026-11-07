@@ -1,0 +1,234 @@
+<contact-prompt></contact-prompt>
+<view wx:if="{{analysis}}" class="analysis-page">
+  <view class="asset-head">
+    <view>
+      <text class="asset-code latin">{{analysis.symbol}}</text>
+      <view class="asset-name">{{analysis.name}}</view>
+      <text class="updated latin">更新至 {{analysis.updatedAt}}</text>
+    </view>
+    <view class="quote">
+      <text class="latest latin">{{analysis.latest}}</text>
+      <text class="change latin {{analysis.changePct >= 0 ? 'bull' : 'bear'}}">
+        {{analysis.changePct >= 0 ? '+' : ''}}{{analysis.changePct}}%
+      </text>
+    </view>
+  </view>
+
+  <view class="overview-card card">
+    <text class="eyebrow">三周期结论</text>
+    <view class="overview">{{analysis.overview}}</view>
+  </view>
+
+  <view class="period-tabs">
+    <view
+      wx:for="{{periodTabs}}"
+      wx:key="key"
+      class="period-tab {{activePeriod === item.key ? 'active' : ''}}"
+      data-period="{{item.key}}"
+      bindtap="changePeriod"
+    >
+      <text>{{item.label}}</text>
+      <text class="period-direction">{{analysis.periods[item.key].direction}}</text>
+    </view>
+  </view>
+
+  <view class="chart-card card">
+    <view class="chart-head">
+      <view>
+        <text class="section-title">{{activeLabel}}结构{{currentPeriod.displayMode === 'trend' ? ' · 平滑趋势' : ''}}</text>
+        <view class="chart-stage">{{currentPeriod.stage}}</view>
+      </view>
+      <view class="legend">
+        <text wx:if="{{currentPeriod.displayMode !== 'trend'}}" class="bull">阳线</text>
+        <text wx:if="{{currentPeriod.displayMode !== 'trend'}}" class="bear">阴线</text>
+        <text wx:if="{{currentPeriod.displayMode === 'trend'}}" class="latin">平滑趋势</text>
+      </view>
+    </view>
+    <kline-chart
+      id="analysisKlineChart"
+      period="{{currentPeriod}}"
+      visibility="{{visibility}}"
+      event-visibility="{{eventVisibility}}"
+      auto-identify="{{importantOnly}}"
+    />
+    <view class="chart-usage-row">
+      <text>左右滑动查看完整 K 线，默认定位到最近数据</text>
+      <text class="latin">主图 {{patternDisplaySummary.canvasTotal}} / 当前 {{patternDisplaySummary.visibleTotal}}</text>
+    </view>
+    <view class="structure-legend">
+      <view class="structure-legend-item"><view class="structure-swatch wave"></view><text>主要波段</text></view>
+      <view class="structure-legend-item"><view class="structure-swatch trendline"></view><text>趋势线</text></view>
+      <view class="structure-legend-item"><view class="structure-swatch ma"></view><text>长期均线</text></view>
+      <view class="structure-legend-item"><view class="structure-swatch chart"></view><text>技术图形</text></view>
+    </view>
+    <view class="level-row">
+      <view class="level support">
+        <text>支撑</text>
+        <text class="latin">{{currentPeriod.support}}</text>
+      </view>
+      <view class="level resistance">
+        <text>阻力</text>
+        <text class="latin">{{currentPeriod.resistance}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="layer-card card">
+    <view class="layer-title-row">
+      <text class="section-title">图层控制</text>
+      <text class="muted">可独立显示或隐藏</text>
+    </view>
+    <view class="important-filter">
+      <view>
+        <view class="important-title">自动识别（推荐）</view>
+        <view class="important-copy">
+          默认显示重点形态，并自动叠加主要波段、趋势线、长期均线、支撑位和阻力位。关闭后可逐层单独浏览。
+        </view>
+      </view>
+      <switch
+        id="auto-identify-switch"
+        color="#2962FF"
+        checked="{{importantOnly}}"
+        bindchange="toggleImportant"
+      />
+    </view>
+    <view class="layer-help">
+      简单、组合、趋势、技术图形任一类别单独开启时，下面列表保留该类全部有效候选；主图会自动错位标签并限制同屏数量。基础结构层采用独立颜色，避免和技术图形混淆。
+    </view>
+    <view class="layer-grid">
+      <view wx:for="{{layerOptions}}" wx:key="key" class="layer-item">
+        <text>{{item.label}}</text>
+        <switch
+          id="layer-switch-{{item.key}}"
+          color="#2962FF"
+          checked="{{visibility[item.key] === true}}"
+          data-key="{{item.key}}"
+          bindchange="toggleLayer"
+        />
+      </view>
+    </view>
+  </view>
+
+  <view class="reading-card card">
+    <view class="reading-tabs">
+      <view
+        class="reading-tab {{readingMode === 'objective' ? 'active' : ''}}"
+        data-mode="objective"
+        bindtap="changeReadingMode"
+      >客观识别</view>
+      <view
+        class="reading-tab {{readingMode === 'rule' ? 'active' : ''}}"
+        data-mode="rule"
+        bindtap="changeReadingMode"
+      >规则解读</view>
+    </view>
+    <view wx:if="{{readingMode === 'objective'}}" class="reading-body">
+      {{currentPeriod.objectiveSummary}}
+    </view>
+    <view wx:else class="reading-body">
+      {{currentPeriod.ruleSummary}}
+    </view>
+  </view>
+
+  <view class="graphic-section">
+    <view class="event-head">
+      <text class="section-title">技术图形</text>
+      <text class="muted">{{currentPeriod.graphics.length}} 项</text>
+    </view>
+    <view
+      wx:for="{{currentPeriod.graphics}}"
+      wx:key="id"
+      class="graphic-item card"
+    >
+      <view>
+        <text class="graphic-name">{{item.name}}</text>
+        <text class="graphic-explain">{{graphicExplanations[item.type]}}</text>
+      </view>
+      <switch
+        color="#2962FF"
+        checked="{{eventVisibility[item.id] !== false}}"
+        data-id="{{item.id}}"
+        bindchange="toggleEvent"
+      />
+    </view>
+  </view>
+
+  <view class="event-section">
+    <view class="event-head">
+      <text class="section-title">已识别线索</text>
+      <text class="muted">
+        当前 {{patternDisplaySummary.visibleTotal}} 项 · 主图 {{patternDisplaySummary.canvasTotal}} 项
+      </text>
+    </view>
+    <view wx:if="{{patternDisplaySummary.visibleTotal > patternDisplaySummary.canvasTotal}}" class="density-note">
+      为避免文字和图形重叠，主图仅绘制较有代表性的 {{patternDisplaySummary.canvasTotal}} 项；以下列表仍完整保留当前筛选的 {{patternDisplaySummary.visibleTotal}} 项。
+    </view>
+    <view wx:if="{{visiblePatterns.length}}">
+      <view
+        wx:for="{{visiblePatterns}}"
+        wx:key="id"
+        class="event-card card"
+        data-index="{{index}}"
+        bindtap="openEvent"
+      >
+        <view class="event-top">
+          <view>
+            <text class="event-category">{{categoryLabels[item.category]}}</text>
+            <text class="event-name {{item.direction}}">{{item.displayName || item.name}}</text>
+            <text wx:if="{{item.important !== false}}" class="ai-badge">AI识别</text>
+          </view>
+          <switch
+            color="#2962FF"
+            checked="{{eventVisibility[item.id] !== false}}"
+            data-id="{{item.id}}"
+            catchtap="stopPropagation"
+            bindchange="toggleEvent"
+          />
+        </view>
+        <view class="event-state">{{item.state}}</view>
+        <view class="event-meaning">{{item.meaning}}</view>
+        <view class="event-more">查看定义与确认条件</view>
+      </view>
+    </view>
+    <view wx:else class="empty-card card">
+      当前没有开启的形态类别，或该周期没有有效候选。可保持“自动识别”，也可单独开启简单、组合、趋势或技术图形浏览完整候选。
+    </view>
+  </view>
+
+  <view class="disclaimer">
+    技术形态是条件信号，不是收益保证。反转形态必须等待后续确认。
+  </view>
+</view>
+
+<view wx:else class="missing">
+  <text>尚未载入分析数据</text>
+  <button bindtap="backHome">返回分析首页</button>
+</view>
+
+<view wx:if="{{detailVisible}}" class="drawer-mask" bindtap="closeEvent">
+  <view class="detail-drawer" catchtap="stopPropagation">
+    <view class="drawer-handle"></view>
+    <view class="drawer-head">
+      <view>
+        <text class="event-category">{{categoryLabels[selectedEvent.category]}}</text>
+        <view class="drawer-title {{selectedEvent.direction}}">{{selectedEvent.displayName || selectedEvent.name}}</view>
+      </view>
+      <text class="close" bindtap="closeEvent">关闭</text>
+    </view>
+    <view class="detail-block">
+      <text class="detail-label">客观定义</text>
+      <text>{{selectedEvent.definition}}</text>
+    </view>
+    <view class="detail-block">
+      <text class="detail-label">通常含义</text>
+      <text>{{selectedEvent.meaning}}</text>
+    </view>
+    <view class="detail-block">
+      <text class="detail-label">确认条件</text>
+      <text>{{selectedEvent.confirmation}}</text>
+    </view>
+    <view class="detail-note">
+      本条解释来自传统技术分析定义与项目知识库。实际判断以趋势位置和后续价格为准。
+    </view>
+  </view>
+</view>

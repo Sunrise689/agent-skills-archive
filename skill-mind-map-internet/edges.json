@@ -1,0 +1,2179 @@
+{
+ "version": "1.0",
+ "source": "act4_out/o_skills/*/SKILL.md 「四类边」节",
+ "o_domain": {
+  "o-agent-orchestrator": "AI/智能体",
+  "o-collab-hub": "办公协作",
+  "o-data-lead": "数据分析",
+  "o-dev-lead": "软件工程",
+  "o-doc-composer": "跨格式写作",
+  "o-growth-lead": "营销增长",
+  "o-ops-console": "部署运维",
+  "o-research-hub": "科研流程",
+  "o-security-commander": "安全合规",
+  "o-test-dispatcher": "测试质量",
+  "o-visual-director": "设计/视觉"
+ },
+ "roster": {
+  "o-agent-orchestrator": {
+   "m": [
+    "记忆与上下文策略",
+    "检索问答链路"
+   ],
+   "t": [
+    "mesh-memory",
+    "openviking-context-database",
+    "context-engineering@mrgoonie__claudekit-skills",
+    "context-engine",
+    "sliding-window-chat-truncation",
+    "skill-router-v2",
+    "rag-pipeline-design",
+    "rag-architecture-review",
+    "iterative-retrieval",
+    "top-k-vector-pruning",
+    "summarized-rag-memories",
+    "rag-observability-evals"
+   ]
+  },
+  "o-collab-hub": {
+   "m": [
+    "会议决策流转法",
+    "任务依赖编排法"
+   ],
+   "t": [
+    "meeting-insights",
+    "meeting-analyzer",
+    "lark-calendar",
+    "google-calendar-automation@rootcastleco__rei-skills",
+    "notion-meeting-notes",
+    "meeting-notes@alapha888__agent-skills-en",
+    "trello@alivirgo__Major-AI-Skills",
+    "using-todo",
+    "kanban-board",
+    "secretary",
+    "team-communications",
+    "action-items-todo",
+    "team-update-aggregator"
+   ]
+  },
+  "o-data-lead": {
+   "m": [
+    "业务问题与指标分析",
+    "研究设计与统计推断"
+   ],
+   "t": [
+    "data-profiler",
+    "quantitative-analysis",
+    "metric-tree-builder",
+    "data-analysis-standard@mohitagw15856__pm-claude-skills",
+    "cohort-analysis@mohitagw15856__pm-claude-skills",
+    "missing-data-handling",
+    "data-visualization-discipline",
+    "chart-choice",
+    "statistical-analyst",
+    "causal-inference",
+    "ab-test-setup@diegosouzapw__awesome-omni-skills",
+    "ab-test-readout"
+   ]
+  },
+  "o-dev-lead": {
+   "m": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills"
+   ],
+   "t": [
+    "lint-and-validate@diegosouzapw__awesome-omni-skills",
+    "database-architect@diegosouzapw__awesome-omni-skills",
+    "api-design-principles",
+    "clean-code@diegosouzapw__awesome-omni-skills",
+    "dependency-injection-patterns",
+    "error-handling-patterns@diegosouzapw__awesome-omni-skills",
+    "go-concurrency-patterns@diegosouzapw__awesome-omni-skills",
+    "async-python-patterns@diegosouzapw__awesome-omni-skills",
+    "sql-optimization-patterns@diegosouzapw__awesome-omni-skills",
+    "code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills",
+    "deprecation-and-migration",
+    "git-workflow-and-versioning",
+    "git-pr-review@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "o-doc-composer": {
+   "m": [
+    "格式转换编排",
+    "本地化与多端适配编排"
+   ],
+   "t": [
+    "sn-report-format-discovery",
+    "baoyu-translate",
+    "latex-translation-guide",
+    "azure-ai-translation-document-py@lingxling__awesome-skills-cn",
+    "latex-paper-conversion@lingxling__awesome-skills-cn",
+    "latex-to-quarto",
+    "latex-to-typst",
+    "huashu-md-html",
+    "quarto-clean",
+    "pdf-creator",
+    "platform-format-adapt@bangwozuo__coldstart-growth-zh",
+    "hd2-bilingual-doc-verify"
+   ]
+  },
+  "o-growth-lead": {
+   "m": [
+    "growth-engine-v2",
+    "cmo-advisor"
+   ],
+   "t": [
+    "marketing-campaign-planner",
+    "lead-capture",
+    "email-sequence@indranilbanerjee__digital-marketing-pro",
+    "ads",
+    "ad-angle-miner",
+    "influencer-prospecting",
+    "outbound-prospecting",
+    "popup-cro-v2",
+    "cro@coreyhaines31__marketingskills",
+    "referral-programs",
+    "positioning-messaging",
+    "landing-page-audit"
+   ]
+  },
+  "o-ops-console": {
+   "m": [
+    "devops-sre-master",
+    "delivery-manager"
+   ],
+   "t": [
+    "land-and-deploy",
+    "terraform",
+    "docker",
+    "kubernetes-deployment@diegosouzapw__awesome-omni-skills",
+    "istio-traffic-management",
+    "canary",
+    "alert-management",
+    "incident-responder@diegosouzapw__awesome-omni-skills",
+    "env-troubleshoot",
+    "keda"
+   ]
+  },
+  "o-research-hub": {
+   "m": [
+    "deep-research-framework",
+    "slr-prisma"
+   ],
+   "t": [
+    "search-lit",
+    "citation-chaining-guide",
+    "fulltext-retrieval",
+    "Evaluating Paper Relevance",
+    "five-questions",
+    "literature-review-builder",
+    "paper-write",
+    "figure-composer",
+    "cite",
+    "validate-bib@brycewang-stanford__Auto-Empirical-Research-Skills",
+    "find-journal",
+    "paper-review-lite"
+   ]
+  },
+  "o-security-commander": {
+   "m": [
+    "pentest-checklist-v2",
+    "cis-controls"
+   ],
+   "t": [
+    "skillspector",
+    "mcp-safety-review",
+    "vuln-scan",
+    "modeling-threats",
+    "owasp-asvs",
+    "isms-audit-expert",
+    "cybersecurity-red-team-master",
+    "pentest-report",
+    "threat-detection",
+    "incident-response@cbrock84__headcount",
+    "building-detection-rules-with-sigma",
+    "windows-hardening"
+   ]
+  },
+  "o-test-dispatcher": {
+   "m": [
+    "fr-acceptance",
+    "a11y-audit@borghei__Claude-Skills"
+   ],
+   "t": [
+    "qa-expert",
+    "verification-discipline",
+    "playwright-pro",
+    "visual-regression-testing",
+    "accessibility-tester",
+    "test-scenarios",
+    "exploratory-testing",
+    "qa-test-planner",
+    "meta-verify",
+    "flake-triage",
+    "false-green-tests",
+    "flaky-test-fixer"
+   ]
+  },
+  "o-visual-director": {
+   "m": [
+    "视觉方向与路径决策",
+    "视觉交付编排"
+   ],
+   "t": [
+    "briefbound-visual-design",
+    "brand-identity@cbrock84__headcount",
+    "press-logo",
+    "design-system-generate",
+    "frontend-design-v3",
+    "interface-craft",
+    "illustration-direction",
+    "image-generation@bytedance__deer-flow",
+    "visual-content",
+    "sn-infographic",
+    "baoyu-slide-deck",
+    "motion-graphics"
+   ]
+  }
+ },
+ "edges": {
+  "o2t": [
+   {
+    "from": "o-agent-orchestrator",
+    "to": "skill-router-v2"
+   },
+   {
+    "from": "o-collab-hub",
+    "to": "meeting-insights"
+   },
+   {
+    "from": "o-data-lead",
+    "to": "data-visualization-discipline"
+   },
+   {
+    "from": "o-data-lead",
+    "to": "quantitative-analysis"
+   },
+   {
+    "from": "o-data-lead",
+    "to": "data-profiler"
+   },
+   {
+    "from": "o-dev-lead",
+    "to": "lint-and-validate@diegosouzapw__awesome-omni-skills"
+   },
+   {
+    "from": "o-dev-lead",
+    "to": "git-workflow-and-versioning"
+   },
+   {
+    "from": "o-doc-composer",
+    "to": "sn-report-format-discovery"
+   },
+   {
+    "from": "o-doc-composer",
+    "to": "baoyu-translate"
+   },
+   {
+    "from": "o-doc-composer",
+    "to": "huashu-md-html"
+   },
+   {
+    "from": "o-ops-console",
+    "to": "incident-responder@diegosouzapw__awesome-omni-skills"
+   },
+   {
+    "from": "o-ops-console",
+    "to": "alert-management"
+   },
+   {
+    "from": "o-ops-console",
+    "to": "land-and-deploy"
+   },
+   {
+    "from": "o-research-hub",
+    "to": "paper-review-lite"
+   },
+   {
+    "from": "o-research-hub",
+    "to": "search-lit"
+   },
+   {
+    "from": "o-security-commander",
+    "to": "incident-response@cbrock84__headcount"
+   },
+   {
+    "from": "o-security-commander",
+    "to": "mcp-safety-review"
+   },
+   {
+    "from": "o-security-commander",
+    "to": "modeling-threats"
+   },
+   {
+    "from": "o-security-commander",
+    "to": "threat-detection"
+   },
+   {
+    "from": "o-security-commander",
+    "to": "skillspector"
+   },
+   {
+    "from": "o-security-commander",
+    "to": "vuln-scan"
+   },
+   {
+    "from": "o-test-dispatcher",
+    "to": "playwright-pro"
+   },
+   {
+    "from": "o-test-dispatcher",
+    "to": "flake-triage"
+   },
+   {
+    "from": "o-test-dispatcher",
+    "to": "qa-expert"
+   },
+   {
+    "from": "o-visual-director",
+    "to": "sn-infographic"
+   },
+   {
+    "from": "o-visual-director",
+    "to": "press-logo"
+   }
+  ],
+  "o2m": [
+   {
+    "from": "o-agent-orchestrator",
+    "to": "记忆与上下文策略",
+    "note": "跨会话记忆或上下文问题 → 记忆与上下文策略"
+   },
+   {
+    "from": "o-agent-orchestrator",
+    "to": "检索问答链路",
+    "note": "检索问答设计或排障 → 检索问答链路"
+   },
+   {
+    "from": "o-collab-hub",
+    "to": "会议决策流转法",
+    "note": "决策与行动项分发 → 会议决策流转法"
+   },
+   {
+    "from": "o-collab-hub",
+    "to": "任务依赖编排法",
+    "note": "优先级与依赖编排 → 任务依赖编排法"
+   },
+   {
+    "from": "o-data-lead",
+    "to": "业务问题与指标分析",
+    "note": "业务问题与指标分析"
+   },
+   {
+    "from": "o-data-lead",
+    "to": "研究设计与统计推断",
+    "note": "研究设计与统计推断"
+   },
+   {
+    "from": "o-dev-lead",
+    "to": "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "note": "架构与设计问题 → `architecture-patterns@diegosouzapw__awesome-omni-skills`"
+   },
+   {
+    "from": "o-dev-lead",
+    "to": "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills",
+    "note": "质量演进问题 → `refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills`"
+   },
+   {
+    "from": "o-doc-composer",
+    "to": "格式转换编排",
+    "note": "格式转换编排"
+   },
+   {
+    "from": "o-doc-composer",
+    "to": "本地化与多端适配编排",
+    "note": "本地化与多端适配编排"
+   },
+   {
+    "from": "o-ops-console",
+    "to": "devops-sre-master",
+    "note": "`devops-sre-master`（先判稳态/事故态）"
+   },
+   {
+    "from": "o-ops-console",
+    "to": "delivery-manager",
+    "note": "`delivery-manager`（先判放行条件与回滚阈值）"
+   },
+   {
+    "from": "o-research-hub",
+    "to": "deep-research-framework",
+    "note": "- 领域侦察 → `deep-research-framework`"
+   },
+   {
+    "from": "o-research-hub",
+    "to": "slr-prisma",
+    "note": "- 系统综述或论文出版流程 → `slr-prisma`"
+   },
+   {
+    "from": "o-security-commander",
+    "to": "pentest-checklist-v2",
+    "note": "- 授权攻防 → `pentest-checklist-v2`"
+   },
+   {
+    "from": "o-security-commander",
+    "to": "cis-controls",
+    "note": "- 合规判定 → `cis-controls`"
+   },
+   {
+    "from": "o-test-dispatcher",
+    "to": "fr-acceptance",
+    "note": "fr-acceptance（验收矩阵回填）"
+   },
+   {
+    "from": "o-test-dispatcher",
+    "to": "a11y-audit@borghei__Claude-Skills",
+    "note": "a11y-audit@borghei__Claude-Skills（可访问性审计）"
+   },
+   {
+    "from": "o-visual-director",
+    "to": "视觉方向与路径决策",
+    "note": "方向未定时调用“视觉方向与路径决策”"
+   },
+   {
+    "from": "o-visual-director",
+    "to": "视觉交付编排",
+    "note": "多产物需要协调时调用“视觉交付编排”"
+   }
+  ],
+  "m2t": [
+   {
+    "from": "记忆与上下文策略",
+    "to": "context-engineering@mrgoonie__claudekit-skills",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "记忆与上下文策略",
+    "to": "sliding-window-chat-truncation",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "记忆与上下文策略",
+    "to": "openviking-context-database",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "记忆与上下文策略",
+    "to": "context-engine",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "记忆与上下文策略",
+    "to": "mesh-memory",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "检索问答链路",
+    "to": "rag-architecture-review",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "检索问答链路",
+    "to": "summarized-rag-memories",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "检索问答链路",
+    "to": "rag-observability-evals",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "检索问答链路",
+    "to": "top-k-vector-pruning",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "检索问答链路",
+    "to": "rag-pipeline-design",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "检索问答链路",
+    "to": "iterative-retrieval",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "检索问答链路",
+    "to": "skill-router-v2",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "from": "会议决策流转法",
+    "to": "notion-meeting-notes",
+    "o": "o-collab-hub"
+   },
+   {
+    "from": "会议决策流转法",
+    "to": "using-todo",
+    "o": "o-collab-hub"
+   },
+   {
+    "from": "任务依赖编排法",
+    "to": "trello@alivirgo__Major-AI-Skills",
+    "o": "o-collab-hub"
+   },
+   {
+    "from": "任务依赖编排法",
+    "to": "kanban-board",
+    "o": "o-collab-hub"
+   },
+   {
+    "from": "业务问题与指标分析",
+    "to": "data-analysis-standard@mohitagw15856__pm-claude-skills",
+    "o": "o-data-lead"
+   },
+   {
+    "from": "业务问题与指标分析",
+    "to": "cohort-analysis@mohitagw15856__pm-claude-skills",
+    "o": "o-data-lead"
+   },
+   {
+    "from": "业务问题与指标分析",
+    "to": "quantitative-analysis",
+    "o": "o-data-lead"
+   },
+   {
+    "from": "业务问题与指标分析",
+    "to": "metric-tree-builder",
+    "o": "o-data-lead"
+   },
+   {
+    "from": "研究设计与统计推断",
+    "to": "ab-test-setup@diegosouzapw__awesome-omni-skills",
+    "o": "o-data-lead"
+   },
+   {
+    "from": "研究设计与统计推断",
+    "to": "statistical-analyst",
+    "o": "o-data-lead"
+   },
+   {
+    "from": "研究设计与统计推断",
+    "to": "causal-inference",
+    "o": "o-data-lead"
+   },
+   {
+    "from": "研究设计与统计推断",
+    "to": "ab-test-readout",
+    "o": "o-data-lead"
+   },
+   {
+    "from": "业务问题与指标分析",
+    "to": "data-visualization-discipline",
+    "o": "o-data-lead",
+    "note": "共用"
+   },
+   {
+    "from": "业务问题与指标分析",
+    "to": "missing-data-handling",
+    "o": "o-data-lead",
+    "note": "共用"
+   },
+   {
+    "from": "业务问题与指标分析",
+    "to": "data-profiler",
+    "o": "o-data-lead",
+    "note": "共用"
+   },
+   {
+    "from": "业务问题与指标分析",
+    "to": "chart-choice",
+    "o": "o-data-lead",
+    "note": "共用"
+   },
+   {
+    "from": "研究设计与统计推断",
+    "to": "data-visualization-discipline",
+    "o": "o-data-lead",
+    "note": "共用"
+   },
+   {
+    "from": "研究设计与统计推断",
+    "to": "missing-data-handling",
+    "o": "o-data-lead",
+    "note": "共用"
+   },
+   {
+    "from": "研究设计与统计推断",
+    "to": "data-profiler",
+    "o": "o-data-lead",
+    "note": "共用"
+   },
+   {
+    "from": "研究设计与统计推断",
+    "to": "chart-choice",
+    "o": "o-data-lead",
+    "note": "共用"
+   },
+   {
+    "from": "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "to": "error-handling-patterns@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "to": "go-concurrency-patterns@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "to": "async-python-patterns@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "to": "database-architect@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "to": "clean-code@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "to": "dependency-injection-patterns",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "to": "api-design-principles",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills",
+    "to": "code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills",
+    "to": "sql-optimization-patterns@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills",
+    "to": "lint-and-validate@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills",
+    "to": "git-pr-review@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills",
+    "to": "deprecation-and-migration",
+    "o": "o-dev-lead"
+   },
+   {
+    "from": "格式转换编排",
+    "to": "latex-paper-conversion@lingxling__awesome-skills-cn",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "格式转换编排",
+    "to": "sn-report-format-discovery",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "格式转换编排",
+    "to": "latex-to-quarto",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "格式转换编排",
+    "to": "latex-to-typst",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "格式转换编排",
+    "to": "huashu-md-html",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "格式转换编排",
+    "to": "quarto-clean",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "格式转换编排",
+    "to": "pdf-creator",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "本地化与多端适配编排",
+    "to": "azure-ai-translation-document-py@lingxling__awesome-skills-cn",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "本地化与多端适配编排",
+    "to": "platform-format-adapt@bangwozuo__coldstart-growth-zh",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "本地化与多端适配编排",
+    "to": "hd2-bilingual-doc-verify",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "本地化与多端适配编排",
+    "to": "latex-translation-guide",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "本地化与多端适配编排",
+    "to": "baoyu-translate",
+    "o": "o-doc-composer"
+   },
+   {
+    "from": "devops-sre-master",
+    "to": "incident-responder@diegosouzapw__awesome-omni-skills",
+    "o": "o-ops-console"
+   },
+   {
+    "from": "devops-sre-master",
+    "to": "alert-management",
+    "o": "o-ops-console"
+   },
+   {
+    "from": "devops-sre-master",
+    "to": "env-troubleshoot",
+    "o": "o-ops-console"
+   },
+   {
+    "from": "delivery-manager",
+    "to": "land-and-deploy",
+    "o": "o-ops-console"
+   },
+   {
+    "from": "delivery-manager",
+    "to": "canary",
+    "o": "o-ops-console"
+   },
+   {
+    "from": "delivery-manager",
+    "to": "keda",
+    "o": "o-ops-console"
+   },
+   {
+    "from": "deep-research-framework",
+    "to": "Evaluating Paper Relevance",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "deep-research-framework",
+    "to": "citation-chaining-guide",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "deep-research-framework",
+    "to": "fulltext-retrieval",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "deep-research-framework",
+    "to": "five-questions",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "deep-research-framework",
+    "to": "search-lit",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "slr-prisma",
+    "to": "validate-bib@brycewang-stanford__Auto-Empirical-Research-Skills",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "slr-prisma",
+    "to": "literature-review-builder",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "slr-prisma",
+    "to": "paper-review-lite",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "slr-prisma",
+    "to": "figure-composer",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "slr-prisma",
+    "to": "find-journal",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "slr-prisma",
+    "to": "paper-write",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "slr-prisma",
+    "to": "cite",
+    "o": "o-research-hub"
+   },
+   {
+    "from": "pentest-checklist-v2",
+    "to": "cybersecurity-red-team-master",
+    "o": "o-security-commander"
+   },
+   {
+    "from": "pentest-checklist-v2",
+    "to": "pentest-report",
+    "o": "o-security-commander"
+   },
+   {
+    "from": "cis-controls",
+    "to": "isms-audit-expert",
+    "o": "o-security-commander"
+   },
+   {
+    "from": "cis-controls",
+    "to": "windows-hardening",
+    "o": "o-security-commander"
+   },
+   {
+    "from": "cis-controls",
+    "to": "owasp-asvs",
+    "o": "o-security-commander"
+   },
+   {
+    "from": "fr-acceptance",
+    "to": "qa-test-planner",
+    "o": "o-test-dispatcher"
+   },
+   {
+    "from": "fr-acceptance",
+    "to": "test-scenarios",
+    "o": "o-test-dispatcher"
+   },
+   {
+    "from": "a11y-audit@borghei__Claude-Skills",
+    "to": "accessibility-tester",
+    "o": "o-test-dispatcher"
+   },
+   {
+    "from": "视觉方向与路径决策",
+    "to": "briefbound-visual-design",
+    "o": "o-visual-director"
+   },
+   {
+    "from": "视觉方向与路径决策",
+    "to": "illustration-direction",
+    "o": "o-visual-director"
+   },
+   {
+    "from": "视觉方向与路径决策",
+    "to": "visual-content",
+    "o": "o-visual-director"
+   },
+   {
+    "from": "视觉交付编排",
+    "to": "brand-identity@cbrock84__headcount",
+    "o": "o-visual-director"
+   },
+   {
+    "from": "视觉交付编排",
+    "to": "design-system-generate",
+    "o": "o-visual-director"
+   },
+   {
+    "from": "视觉交付编排",
+    "to": "frontend-design-v3",
+    "o": "o-visual-director"
+   },
+   {
+    "from": "视觉交付编排",
+    "to": "baoyu-slide-deck",
+    "o": "o-visual-director"
+   },
+   {
+    "from": "视觉交付编排",
+    "to": "motion-graphics",
+    "o": "o-visual-director"
+   },
+   {
+    "from": "视觉交付编排",
+    "to": "sn-infographic",
+    "o": "o-visual-director"
+   }
+  ],
+  "t2t": [
+   {
+    "a": "rag-observability-evals",
+    "b": "rag-pipeline-design",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "a": "top-k-vector-pruning",
+    "b": "iterative-retrieval",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "a": "context-engineering@mrgoonie__claudekit-skills",
+    "b": "sliding-window-chat-truncation",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "a": "openviking-context-database",
+    "b": "mesh-memory",
+    "o": "o-agent-orchestrator"
+   },
+   {
+    "a": "google-calendar-automation@rootcastleco__rei-skills",
+    "b": "lark-calendar",
+    "o": "o-collab-hub"
+   },
+   {
+    "a": "meeting-insights",
+    "b": "meeting-analyzer",
+    "o": "o-collab-hub"
+   },
+   {
+    "a": "kanban-board",
+    "b": "using-todo",
+    "o": "o-collab-hub"
+   },
+   {
+    "a": "missing-data-handling",
+    "b": "data-profiler",
+    "o": "o-data-lead"
+   },
+   {
+    "a": "data-visualization-discipline",
+    "b": "chart-choice",
+    "o": "o-data-lead"
+   },
+   {
+    "a": "ab-test-setup@diegosouzapw__awesome-omni-skills",
+    "b": "ab-test-readout",
+    "o": "o-data-lead"
+   },
+   {
+    "a": "statistical-analyst",
+    "b": "causal-inference",
+    "o": "o-data-lead"
+   },
+   {
+    "a": "dependency-injection-patterns",
+    "b": "api-design-principles",
+    "o": "o-dev-lead"
+   },
+   {
+    "a": "error-handling-patterns@diegosouzapw__awesome-omni-skills",
+    "b": "clean-code@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "a": "go-concurrency-patterns@diegosouzapw__awesome-omni-skills",
+    "b": "async-python-patterns@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "a": "sql-optimization-patterns@diegosouzapw__awesome-omni-skills",
+    "b": "database-architect@diegosouzapw__awesome-omni-skills",
+    "o": "o-dev-lead"
+   },
+   {
+    "a": "code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills",
+    "b": "deprecation-and-migration",
+    "o": "o-dev-lead"
+   },
+   {
+    "a": "git-pr-review@diegosouzapw__awesome-omni-skills",
+    "b": "git-workflow-and-versioning",
+    "o": "o-dev-lead"
+   },
+   {
+    "a": "latex-to-quarto",
+    "b": "quarto-clean",
+    "o": "o-doc-composer"
+   },
+   {
+    "a": "huashu-md-html",
+    "b": "pdf-creator",
+    "o": "o-doc-composer"
+   },
+   {
+    "a": "hd2-bilingual-doc-verify",
+    "b": "baoyu-translate",
+    "o": "o-doc-composer"
+   },
+   {
+    "a": "latex-paper-conversion@lingxling__awesome-skills-cn",
+    "b": "latex-translation-guide",
+    "o": "o-doc-composer"
+   },
+   {
+    "a": "land-and-deploy",
+    "b": "canary",
+    "o": "o-ops-console"
+   },
+   {
+    "a": "alert-management",
+    "b": "canary",
+    "o": "o-ops-console"
+   },
+   {
+    "a": "kubernetes-deployment@diegosouzapw__awesome-omni-skills",
+    "b": "terraform",
+    "o": "o-ops-console"
+   },
+   {
+    "a": "kubernetes-deployment@diegosouzapw__awesome-omni-skills",
+    "b": "docker",
+    "o": "o-ops-console"
+   },
+   {
+    "a": "istio-traffic-management",
+    "b": "canary",
+    "o": "o-ops-console"
+   },
+   {
+    "a": "citation-chaining-guide",
+    "b": "search-lit",
+    "o": "o-research-hub"
+   },
+   {
+    "a": "Evaluating Paper Relevance",
+    "b": "fulltext-retrieval",
+    "o": "o-research-hub"
+   },
+   {
+    "a": "literature-review-builder",
+    "b": "paper-write",
+    "o": "o-research-hub"
+   },
+   {
+    "a": "figure-composer",
+    "b": "paper-write",
+    "o": "o-research-hub"
+   },
+   {
+    "a": "validate-bib@brycewang-stanford__Auto-Empirical-Research-Skills",
+    "b": "cite",
+    "o": "o-research-hub"
+   },
+   {
+    "a": "mcp-safety-review",
+    "b": "skillspector",
+    "o": "o-security-commander"
+   },
+   {
+    "a": "modeling-threats",
+    "b": "vuln-scan",
+    "o": "o-security-commander"
+   },
+   {
+    "a": "owasp-asvs",
+    "b": "vuln-scan",
+    "o": "o-security-commander"
+   },
+   {
+    "a": "building-detection-rules-with-sigma",
+    "b": "pentest-report",
+    "o": "o-security-commander"
+   },
+   {
+    "a": "incident-response@cbrock84__headcount",
+    "b": "threat-detection",
+    "o": "o-security-commander"
+   },
+   {
+    "a": "playwright-pro",
+    "b": "qa-expert",
+    "o": "o-test-dispatcher"
+   },
+   {
+    "a": "exploratory-testing",
+    "b": "test-scenarios",
+    "o": "o-test-dispatcher"
+   },
+   {
+    "a": "visual-regression-testing",
+    "b": "flake-triage",
+    "o": "o-test-dispatcher"
+   },
+   {
+    "a": "verification-discipline",
+    "b": "qa-test-planner",
+    "o": "o-test-dispatcher"
+   },
+   {
+    "a": "brand-identity@cbrock84__headcount",
+    "b": "press-logo",
+    "o": "o-visual-director"
+   },
+   {
+    "a": "design-system-generate",
+    "b": "frontend-design-v3",
+    "o": "o-visual-director"
+   },
+   {
+    "a": "image-generation@bytedance__deer-flow",
+    "b": "illustration-direction",
+    "o": "o-visual-director"
+   },
+   {
+    "a": "visual-content",
+    "b": "sn-infographic",
+    "o": "o-visual-director"
+   },
+   {
+    "a": "baoyu-slide-deck",
+    "b": "motion-graphics",
+    "o": "o-visual-director"
+   }
+  ]
+ },
+ "stats": {
+  "o": 11,
+  "m_nodes": 22,
+  "t_nodes": 132,
+  "edges": {
+   "o2t": 26,
+   "o2m": 20,
+   "m2t": 91,
+   "t2t": 45
+  },
+  "edges_total": 182
+ },
+ "adjacency": {
+  "o-agent-orchestrator": {
+   "T->": [
+    "skill-router-v2"
+   ],
+   "M->": [
+    "记忆与上下文策略",
+    "检索问答链路"
+   ]
+  },
+  "o-collab-hub": {
+   "T->": [
+    "meeting-insights"
+   ],
+   "M->": [
+    "会议决策流转法",
+    "任务依赖编排法"
+   ]
+  },
+  "o-data-lead": {
+   "T->": [
+    "data-visualization-discipline",
+    "quantitative-analysis",
+    "data-profiler"
+   ],
+   "M->": [
+    "业务问题与指标分析",
+    "研究设计与统计推断"
+   ]
+  },
+  "o-dev-lead": {
+   "T->": [
+    "lint-and-validate@diegosouzapw__awesome-omni-skills",
+    "git-workflow-and-versioning"
+   ],
+   "M->": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills",
+    "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills"
+   ]
+  },
+  "o-doc-composer": {
+   "T->": [
+    "sn-report-format-discovery",
+    "baoyu-translate",
+    "huashu-md-html"
+   ],
+   "M->": [
+    "格式转换编排",
+    "本地化与多端适配编排"
+   ]
+  },
+  "o-ops-console": {
+   "T->": [
+    "incident-responder@diegosouzapw__awesome-omni-skills",
+    "alert-management",
+    "land-and-deploy"
+   ],
+   "M->": [
+    "devops-sre-master",
+    "delivery-manager"
+   ]
+  },
+  "o-research-hub": {
+   "T->": [
+    "paper-review-lite",
+    "search-lit"
+   ],
+   "M->": [
+    "deep-research-framework",
+    "slr-prisma"
+   ]
+  },
+  "o-security-commander": {
+   "T->": [
+    "incident-response@cbrock84__headcount",
+    "mcp-safety-review",
+    "modeling-threats",
+    "threat-detection",
+    "skillspector",
+    "vuln-scan"
+   ],
+   "M->": [
+    "pentest-checklist-v2",
+    "cis-controls"
+   ]
+  },
+  "o-test-dispatcher": {
+   "T->": [
+    "playwright-pro",
+    "flake-triage",
+    "qa-expert"
+   ],
+   "M->": [
+    "fr-acceptance",
+    "a11y-audit@borghei__Claude-Skills"
+   ]
+  },
+  "o-visual-director": {
+   "T->": [
+    "sn-infographic",
+    "press-logo"
+   ],
+   "M->": [
+    "视觉方向与路径决策",
+    "视觉交付编排"
+   ]
+  },
+  "记忆与上下文策略": {
+   "T->": [
+    "context-engineering@mrgoonie__claudekit-skills",
+    "sliding-window-chat-truncation",
+    "openviking-context-database",
+    "context-engine",
+    "mesh-memory"
+   ]
+  },
+  "context-engineering@mrgoonie__claudekit-skills": {
+   "M<-": [
+    "记忆与上下文策略"
+   ],
+   "T<->": [
+    "sliding-window-chat-truncation"
+   ]
+  },
+  "sliding-window-chat-truncation": {
+   "M<-": [
+    "记忆与上下文策略"
+   ],
+   "T<->": [
+    "context-engineering@mrgoonie__claudekit-skills"
+   ]
+  },
+  "openviking-context-database": {
+   "M<-": [
+    "记忆与上下文策略"
+   ],
+   "T<->": [
+    "mesh-memory"
+   ]
+  },
+  "context-engine": {
+   "M<-": [
+    "记忆与上下文策略"
+   ]
+  },
+  "mesh-memory": {
+   "M<-": [
+    "记忆与上下文策略"
+   ],
+   "T<->": [
+    "openviking-context-database"
+   ]
+  },
+  "检索问答链路": {
+   "T->": [
+    "rag-architecture-review",
+    "summarized-rag-memories",
+    "rag-observability-evals",
+    "top-k-vector-pruning",
+    "rag-pipeline-design",
+    "iterative-retrieval",
+    "skill-router-v2"
+   ]
+  },
+  "rag-architecture-review": {
+   "M<-": [
+    "检索问答链路"
+   ]
+  },
+  "summarized-rag-memories": {
+   "M<-": [
+    "检索问答链路"
+   ]
+  },
+  "rag-observability-evals": {
+   "M<-": [
+    "检索问答链路"
+   ],
+   "T<->": [
+    "rag-pipeline-design"
+   ]
+  },
+  "top-k-vector-pruning": {
+   "M<-": [
+    "检索问答链路"
+   ],
+   "T<->": [
+    "iterative-retrieval"
+   ]
+  },
+  "rag-pipeline-design": {
+   "M<-": [
+    "检索问答链路"
+   ],
+   "T<->": [
+    "rag-observability-evals"
+   ]
+  },
+  "iterative-retrieval": {
+   "M<-": [
+    "检索问答链路"
+   ],
+   "T<->": [
+    "top-k-vector-pruning"
+   ]
+  },
+  "skill-router-v2": {
+   "M<-": [
+    "检索问答链路"
+   ]
+  },
+  "会议决策流转法": {
+   "T->": [
+    "notion-meeting-notes",
+    "using-todo"
+   ]
+  },
+  "notion-meeting-notes": {
+   "M<-": [
+    "会议决策流转法"
+   ]
+  },
+  "using-todo": {
+   "M<-": [
+    "会议决策流转法"
+   ],
+   "T<->": [
+    "kanban-board"
+   ]
+  },
+  "任务依赖编排法": {
+   "T->": [
+    "trello@alivirgo__Major-AI-Skills",
+    "kanban-board"
+   ]
+  },
+  "trello@alivirgo__Major-AI-Skills": {
+   "M<-": [
+    "任务依赖编排法"
+   ]
+  },
+  "kanban-board": {
+   "M<-": [
+    "任务依赖编排法"
+   ],
+   "T<->": [
+    "using-todo"
+   ]
+  },
+  "业务问题与指标分析": {
+   "T->": [
+    "data-analysis-standard@mohitagw15856__pm-claude-skills",
+    "cohort-analysis@mohitagw15856__pm-claude-skills",
+    "quantitative-analysis",
+    "metric-tree-builder",
+    "data-visualization-discipline",
+    "missing-data-handling",
+    "data-profiler",
+    "chart-choice"
+   ]
+  },
+  "data-analysis-standard@mohitagw15856__pm-claude-skills": {
+   "M<-": [
+    "业务问题与指标分析"
+   ]
+  },
+  "cohort-analysis@mohitagw15856__pm-claude-skills": {
+   "M<-": [
+    "业务问题与指标分析"
+   ]
+  },
+  "quantitative-analysis": {
+   "M<-": [
+    "业务问题与指标分析"
+   ]
+  },
+  "metric-tree-builder": {
+   "M<-": [
+    "业务问题与指标分析"
+   ]
+  },
+  "研究设计与统计推断": {
+   "T->": [
+    "ab-test-setup@diegosouzapw__awesome-omni-skills",
+    "statistical-analyst",
+    "causal-inference",
+    "ab-test-readout",
+    "data-visualization-discipline",
+    "missing-data-handling",
+    "data-profiler",
+    "chart-choice"
+   ]
+  },
+  "ab-test-setup@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "研究设计与统计推断"
+   ],
+   "T<->": [
+    "ab-test-readout"
+   ]
+  },
+  "statistical-analyst": {
+   "M<-": [
+    "研究设计与统计推断"
+   ],
+   "T<->": [
+    "causal-inference"
+   ]
+  },
+  "causal-inference": {
+   "M<-": [
+    "研究设计与统计推断"
+   ],
+   "T<->": [
+    "statistical-analyst"
+   ]
+  },
+  "ab-test-readout": {
+   "M<-": [
+    "研究设计与统计推断"
+   ],
+   "T<->": [
+    "ab-test-setup@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "data-visualization-discipline": {
+   "M<-": [
+    "业务问题与指标分析",
+    "研究设计与统计推断"
+   ],
+   "T<->": [
+    "chart-choice"
+   ]
+  },
+  "missing-data-handling": {
+   "M<-": [
+    "业务问题与指标分析",
+    "研究设计与统计推断"
+   ],
+   "T<->": [
+    "data-profiler"
+   ]
+  },
+  "data-profiler": {
+   "M<-": [
+    "业务问题与指标分析",
+    "研究设计与统计推断"
+   ],
+   "T<->": [
+    "missing-data-handling"
+   ]
+  },
+  "chart-choice": {
+   "M<-": [
+    "业务问题与指标分析",
+    "研究设计与统计推断"
+   ],
+   "T<->": [
+    "data-visualization-discipline"
+   ]
+  },
+  "architecture-patterns@diegosouzapw__awesome-omni-skills": {
+   "T->": [
+    "error-handling-patterns@diegosouzapw__awesome-omni-skills",
+    "go-concurrency-patterns@diegosouzapw__awesome-omni-skills",
+    "async-python-patterns@diegosouzapw__awesome-omni-skills",
+    "database-architect@diegosouzapw__awesome-omni-skills",
+    "clean-code@diegosouzapw__awesome-omni-skills",
+    "dependency-injection-patterns",
+    "api-design-principles"
+   ]
+  },
+  "error-handling-patterns@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills"
+   ],
+   "T<->": [
+    "clean-code@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "go-concurrency-patterns@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills"
+   ],
+   "T<->": [
+    "async-python-patterns@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "async-python-patterns@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills"
+   ],
+   "T<->": [
+    "go-concurrency-patterns@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "database-architect@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills"
+   ],
+   "T<->": [
+    "sql-optimization-patterns@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "clean-code@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills"
+   ],
+   "T<->": [
+    "error-handling-patterns@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "dependency-injection-patterns": {
+   "M<-": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills"
+   ],
+   "T<->": [
+    "api-design-principles"
+   ]
+  },
+  "api-design-principles": {
+   "M<-": [
+    "architecture-patterns@diegosouzapw__awesome-omni-skills"
+   ],
+   "T<->": [
+    "dependency-injection-patterns"
+   ]
+  },
+  "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills": {
+   "T->": [
+    "code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills",
+    "sql-optimization-patterns@diegosouzapw__awesome-omni-skills",
+    "lint-and-validate@diegosouzapw__awesome-omni-skills",
+    "git-pr-review@diegosouzapw__awesome-omni-skills",
+    "deprecation-and-migration"
+   ]
+  },
+  "code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills"
+   ],
+   "T<->": [
+    "deprecation-and-migration"
+   ]
+  },
+  "sql-optimization-patterns@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills"
+   ],
+   "T<->": [
+    "database-architect@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "lint-and-validate@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills"
+   ]
+  },
+  "git-pr-review@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills"
+   ],
+   "T<->": [
+    "git-workflow-and-versioning"
+   ]
+  },
+  "deprecation-and-migration": {
+   "M<-": [
+    "refactor-advisor@AtulPurohit__Antigravity-Awesome-Skills"
+   ],
+   "T<->": [
+    "code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "格式转换编排": {
+   "T->": [
+    "latex-paper-conversion@lingxling__awesome-skills-cn",
+    "sn-report-format-discovery",
+    "latex-to-quarto",
+    "latex-to-typst",
+    "huashu-md-html",
+    "quarto-clean",
+    "pdf-creator"
+   ]
+  },
+  "latex-paper-conversion@lingxling__awesome-skills-cn": {
+   "M<-": [
+    "格式转换编排"
+   ],
+   "T<->": [
+    "latex-translation-guide"
+   ]
+  },
+  "sn-report-format-discovery": {
+   "M<-": [
+    "格式转换编排"
+   ]
+  },
+  "latex-to-quarto": {
+   "M<-": [
+    "格式转换编排"
+   ],
+   "T<->": [
+    "quarto-clean"
+   ]
+  },
+  "latex-to-typst": {
+   "M<-": [
+    "格式转换编排"
+   ]
+  },
+  "huashu-md-html": {
+   "M<-": [
+    "格式转换编排"
+   ],
+   "T<->": [
+    "pdf-creator"
+   ]
+  },
+  "quarto-clean": {
+   "M<-": [
+    "格式转换编排"
+   ],
+   "T<->": [
+    "latex-to-quarto"
+   ]
+  },
+  "pdf-creator": {
+   "M<-": [
+    "格式转换编排"
+   ],
+   "T<->": [
+    "huashu-md-html"
+   ]
+  },
+  "本地化与多端适配编排": {
+   "T->": [
+    "azure-ai-translation-document-py@lingxling__awesome-skills-cn",
+    "platform-format-adapt@bangwozuo__coldstart-growth-zh",
+    "hd2-bilingual-doc-verify",
+    "latex-translation-guide",
+    "baoyu-translate"
+   ]
+  },
+  "azure-ai-translation-document-py@lingxling__awesome-skills-cn": {
+   "M<-": [
+    "本地化与多端适配编排"
+   ]
+  },
+  "platform-format-adapt@bangwozuo__coldstart-growth-zh": {
+   "M<-": [
+    "本地化与多端适配编排"
+   ]
+  },
+  "hd2-bilingual-doc-verify": {
+   "M<-": [
+    "本地化与多端适配编排"
+   ],
+   "T<->": [
+    "baoyu-translate"
+   ]
+  },
+  "latex-translation-guide": {
+   "M<-": [
+    "本地化与多端适配编排"
+   ],
+   "T<->": [
+    "latex-paper-conversion@lingxling__awesome-skills-cn"
+   ]
+  },
+  "baoyu-translate": {
+   "M<-": [
+    "本地化与多端适配编排"
+   ],
+   "T<->": [
+    "hd2-bilingual-doc-verify"
+   ]
+  },
+  "devops-sre-master": {
+   "T->": [
+    "incident-responder@diegosouzapw__awesome-omni-skills",
+    "alert-management",
+    "env-troubleshoot"
+   ]
+  },
+  "incident-responder@diegosouzapw__awesome-omni-skills": {
+   "M<-": [
+    "devops-sre-master"
+   ]
+  },
+  "alert-management": {
+   "M<-": [
+    "devops-sre-master"
+   ],
+   "T<->": [
+    "canary"
+   ]
+  },
+  "env-troubleshoot": {
+   "M<-": [
+    "devops-sre-master"
+   ]
+  },
+  "delivery-manager": {
+   "T->": [
+    "land-and-deploy",
+    "canary",
+    "keda"
+   ]
+  },
+  "land-and-deploy": {
+   "M<-": [
+    "delivery-manager"
+   ],
+   "T<->": [
+    "canary"
+   ]
+  },
+  "canary": {
+   "M<-": [
+    "delivery-manager"
+   ],
+   "T<->": [
+    "land-and-deploy",
+    "alert-management",
+    "istio-traffic-management"
+   ]
+  },
+  "keda": {
+   "M<-": [
+    "delivery-manager"
+   ]
+  },
+  "deep-research-framework": {
+   "T->": [
+    "Evaluating Paper Relevance",
+    "citation-chaining-guide",
+    "fulltext-retrieval",
+    "five-questions",
+    "search-lit"
+   ]
+  },
+  "Evaluating Paper Relevance": {
+   "M<-": [
+    "deep-research-framework"
+   ],
+   "T<->": [
+    "fulltext-retrieval"
+   ]
+  },
+  "citation-chaining-guide": {
+   "M<-": [
+    "deep-research-framework"
+   ],
+   "T<->": [
+    "search-lit"
+   ]
+  },
+  "fulltext-retrieval": {
+   "M<-": [
+    "deep-research-framework"
+   ],
+   "T<->": [
+    "Evaluating Paper Relevance"
+   ]
+  },
+  "five-questions": {
+   "M<-": [
+    "deep-research-framework"
+   ]
+  },
+  "search-lit": {
+   "M<-": [
+    "deep-research-framework"
+   ],
+   "T<->": [
+    "citation-chaining-guide"
+   ]
+  },
+  "slr-prisma": {
+   "T->": [
+    "validate-bib@brycewang-stanford__Auto-Empirical-Research-Skills",
+    "literature-review-builder",
+    "paper-review-lite",
+    "figure-composer",
+    "find-journal",
+    "paper-write",
+    "cite"
+   ]
+  },
+  "validate-bib@brycewang-stanford__Auto-Empirical-Research-Skills": {
+   "M<-": [
+    "slr-prisma"
+   ],
+   "T<->": [
+    "cite"
+   ]
+  },
+  "literature-review-builder": {
+   "M<-": [
+    "slr-prisma"
+   ],
+   "T<->": [
+    "paper-write"
+   ]
+  },
+  "paper-review-lite": {
+   "M<-": [
+    "slr-prisma"
+   ]
+  },
+  "figure-composer": {
+   "M<-": [
+    "slr-prisma"
+   ],
+   "T<->": [
+    "paper-write"
+   ]
+  },
+  "find-journal": {
+   "M<-": [
+    "slr-prisma"
+   ]
+  },
+  "paper-write": {
+   "M<-": [
+    "slr-prisma"
+   ],
+   "T<->": [
+    "literature-review-builder",
+    "figure-composer"
+   ]
+  },
+  "cite": {
+   "M<-": [
+    "slr-prisma"
+   ],
+   "T<->": [
+    "validate-bib@brycewang-stanford__Auto-Empirical-Research-Skills"
+   ]
+  },
+  "pentest-checklist-v2": {
+   "T->": [
+    "cybersecurity-red-team-master",
+    "pentest-report"
+   ]
+  },
+  "cybersecurity-red-team-master": {
+   "M<-": [
+    "pentest-checklist-v2"
+   ]
+  },
+  "pentest-report": {
+   "M<-": [
+    "pentest-checklist-v2"
+   ],
+   "T<->": [
+    "building-detection-rules-with-sigma"
+   ]
+  },
+  "cis-controls": {
+   "T->": [
+    "isms-audit-expert",
+    "windows-hardening",
+    "owasp-asvs"
+   ]
+  },
+  "isms-audit-expert": {
+   "M<-": [
+    "cis-controls"
+   ]
+  },
+  "windows-hardening": {
+   "M<-": [
+    "cis-controls"
+   ]
+  },
+  "owasp-asvs": {
+   "M<-": [
+    "cis-controls"
+   ],
+   "T<->": [
+    "vuln-scan"
+   ]
+  },
+  "fr-acceptance": {
+   "T->": [
+    "qa-test-planner",
+    "test-scenarios"
+   ]
+  },
+  "qa-test-planner": {
+   "M<-": [
+    "fr-acceptance"
+   ],
+   "T<->": [
+    "verification-discipline"
+   ]
+  },
+  "test-scenarios": {
+   "M<-": [
+    "fr-acceptance"
+   ],
+   "T<->": [
+    "exploratory-testing"
+   ]
+  },
+  "a11y-audit@borghei__Claude-Skills": {
+   "T->": [
+    "accessibility-tester"
+   ]
+  },
+  "accessibility-tester": {
+   "M<-": [
+    "a11y-audit@borghei__Claude-Skills"
+   ]
+  },
+  "视觉方向与路径决策": {
+   "T->": [
+    "briefbound-visual-design",
+    "illustration-direction",
+    "visual-content"
+   ]
+  },
+  "briefbound-visual-design": {
+   "M<-": [
+    "视觉方向与路径决策"
+   ]
+  },
+  "illustration-direction": {
+   "M<-": [
+    "视觉方向与路径决策"
+   ],
+   "T<->": [
+    "image-generation@bytedance__deer-flow"
+   ]
+  },
+  "visual-content": {
+   "M<-": [
+    "视觉方向与路径决策"
+   ],
+   "T<->": [
+    "sn-infographic"
+   ]
+  },
+  "视觉交付编排": {
+   "T->": [
+    "brand-identity@cbrock84__headcount",
+    "design-system-generate",
+    "frontend-design-v3",
+    "baoyu-slide-deck",
+    "motion-graphics",
+    "sn-infographic"
+   ]
+  },
+  "brand-identity@cbrock84__headcount": {
+   "M<-": [
+    "视觉交付编排"
+   ],
+   "T<->": [
+    "press-logo"
+   ]
+  },
+  "design-system-generate": {
+   "M<-": [
+    "视觉交付编排"
+   ],
+   "T<->": [
+    "frontend-design-v3"
+   ]
+  },
+  "frontend-design-v3": {
+   "M<-": [
+    "视觉交付编排"
+   ],
+   "T<->": [
+    "design-system-generate"
+   ]
+  },
+  "baoyu-slide-deck": {
+   "M<-": [
+    "视觉交付编排"
+   ],
+   "T<->": [
+    "motion-graphics"
+   ]
+  },
+  "motion-graphics": {
+   "M<-": [
+    "视觉交付编排"
+   ],
+   "T<->": [
+    "baoyu-slide-deck"
+   ]
+  },
+  "sn-infographic": {
+   "M<-": [
+    "视觉交付编排"
+   ],
+   "T<->": [
+    "visual-content"
+   ]
+  },
+  "google-calendar-automation@rootcastleco__rei-skills": {
+   "T<->": [
+    "lark-calendar"
+   ]
+  },
+  "lark-calendar": {
+   "T<->": [
+    "google-calendar-automation@rootcastleco__rei-skills"
+   ]
+  },
+  "meeting-insights": {
+   "T<->": [
+    "meeting-analyzer"
+   ]
+  },
+  "meeting-analyzer": {
+   "T<->": [
+    "meeting-insights"
+   ]
+  },
+  "git-workflow-and-versioning": {
+   "T<->": [
+    "git-pr-review@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "kubernetes-deployment@diegosouzapw__awesome-omni-skills": {
+   "T<->": [
+    "terraform",
+    "docker"
+   ]
+  },
+  "terraform": {
+   "T<->": [
+    "kubernetes-deployment@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "docker": {
+   "T<->": [
+    "kubernetes-deployment@diegosouzapw__awesome-omni-skills"
+   ]
+  },
+  "istio-traffic-management": {
+   "T<->": [
+    "canary"
+   ]
+  },
+  "mcp-safety-review": {
+   "T<->": [
+    "skillspector"
+   ]
+  },
+  "skillspector": {
+   "T<->": [
+    "mcp-safety-review"
+   ]
+  },
+  "modeling-threats": {
+   "T<->": [
+    "vuln-scan"
+   ]
+  },
+  "vuln-scan": {
+   "T<->": [
+    "modeling-threats",
+    "owasp-asvs"
+   ]
+  },
+  "building-detection-rules-with-sigma": {
+   "T<->": [
+    "pentest-report"
+   ]
+  },
+  "incident-response@cbrock84__headcount": {
+   "T<->": [
+    "threat-detection"
+   ]
+  },
+  "threat-detection": {
+   "T<->": [
+    "incident-response@cbrock84__headcount"
+   ]
+  },
+  "playwright-pro": {
+   "T<->": [
+    "qa-expert"
+   ]
+  },
+  "qa-expert": {
+   "T<->": [
+    "playwright-pro"
+   ]
+  },
+  "exploratory-testing": {
+   "T<->": [
+    "test-scenarios"
+   ]
+  },
+  "visual-regression-testing": {
+   "T<->": [
+    "flake-triage"
+   ]
+  },
+  "flake-triage": {
+   "T<->": [
+    "visual-regression-testing"
+   ]
+  },
+  "verification-discipline": {
+   "T<->": [
+    "qa-test-planner"
+   ]
+  },
+  "press-logo": {
+   "T<->": [
+    "brand-identity@cbrock84__headcount"
+   ]
+  },
+  "image-generation@bytedance__deer-flow": {
+   "T<->": [
+    "illustration-direction"
+   ]
+  }
+ }
+}

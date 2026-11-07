@@ -1,0 +1,22 @@
+<view class="contact-page">
+  <contact-prompt></contact-prompt>
+  <view class="contact-hero">
+    <text class="eyebrow">CONTACT</text>
+    <text class="page-title">意见反馈 / 商务合作</text>
+    <text class="page-copy">如果你有使用建议、问题描述，或希望交流商务合作，欢迎联系我们。</text>
+  </view>
+
+  <view class="contact-card">
+    <text class="card-kicker">版本说明</text>
+    <text class="card-title">技术分析学习角目前为免费版本</text>
+    <text class="card-copy">后续部分功能可能会转为付费版本。现在提交详细、具体且有帮助的反馈，我们会随机抽取若干名用户，在付费版本上线后赠予永久免费使用资格。</text>
+  </view>
+
+  <button class="email-button" bindtap="copyEmail">
+    <text class="email-label">联系邮箱</text>
+    <text class="email-value">yuanxing@coze.email</text>
+    <text class="email-action">点击复制</text>
+  </button>
+
+  <text class="contact-note">邮箱会复制到剪贴板，方便你直接粘贴反馈内容。</text>
+</view>

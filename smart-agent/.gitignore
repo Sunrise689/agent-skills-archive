@@ -1,0 +1,11 @@
+# Local runtime artifacts
+evolution-workspaces/
+ runs/*/agent-dirs/
+ out/
+ node_modules/
+
+# Local credentials/config
+.env
+.env.*
+*.key
+*.pem

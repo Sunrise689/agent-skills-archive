@@ -1,0 +1,106 @@
+<view class="home">
+  <contact-prompt></contact-prompt>
+  <view class="home-topbar">
+    <view class="brand-lockup">
+      <view class="brand-mark" aria-label="技术分析学习角图标">
+        <view class="mark-candle candle-one"></view>
+        <view class="mark-candle candle-two"></view>
+        <view class="mark-candle candle-three"></view>
+        <view class="mark-trend"></view>
+      </view>
+      <view class="brand-copy">
+        <text class="brand-name">技术分析学习角</text>
+        <text class="brand-en latin">TECHNICAL ANALYSIS LEARNING</text>
+      </view>
+    </view>
+    <view class="service-pill">
+      <view class="service-dot live"></view>
+      <text>云端</text>
+    </view>
+  </view>
+
+  <view class="vision-hero">
+    <text class="vision-copy">技术分析学习工具 · 先理解市场结构，再观察趋势、形态与指标信号。</text>
+  </view>
+
+  <view class="quote-panel">
+    <view class="quote-panel-head">
+      <view><text class="quote-kicker latin">MARKET NOTES</text><text class="quote-panel-title">交易者的片刻提醒</text></view>
+    </view>
+    <swiper class="quote-swiper" vertical="true" circular="true" autoplay="true" interval="4800" duration="680" disable-touch="true" bindchange="handleQuoteChange">
+      <swiper-item wx:for="{{marketQuotes}}" wx:key="id" data-kind="{{item.kind}}" bindtap="handleQuoteTap">
+        <view class="quote-slide {{item.kind === 'contact' ? 'quote-contact' : ''}}">
+          <text class="quote-mark">“</text>
+          <view class="quote-body"><text class="quote-text">{{item.text}}</text><text class="quote-en latin">{{item.en}}</text><text class="quote-source">{{item.source}}</text></view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="explore-header">
+    <view class="explore-copy">
+      <text class="explore-eyebrow latin">ANALYSIS TOOLS</text>
+      <text class="explore-title">探索</text>
+      <text class="explore-subtitle">选择一种分析方式，从市场结构开始。</text>
+    </view>
+    <view class="explore-search" bindtap="focusAnalysisSearch" aria-label="搜索市场代码">
+      <view class="explore-search-ring"></view>
+      <view class="explore-search-handle"></view>
+    </view>
+  </view>
+
+  <view class="tool-grid">
+    <view
+      class="tool-card {{item.status}}"
+      wx:for="{{analysisTools}}"
+      wx:key="key"
+      data-key="{{item.key}}"
+      bindtap="selectAnalysisTool"
+    >
+      <view class="tool-card-top">
+        <view class="tool-icon {{item.icon}}">
+          <view class="icon-stroke stroke-one"></view>
+          <view class="icon-stroke stroke-two"></view>
+          <view class="icon-stroke stroke-three"></view>
+          <view class="icon-stroke stroke-four"></view>
+        </view>
+        <text class="tool-status {{item.status}}">{{item.statusText}}</text>
+      </view>
+      <text class="tool-title">{{item.title}}</text>
+      <text class="tool-subtitle">{{item.subtitle}}</text>
+      <view class="tool-footer">
+        <text>{{item.status === 'available' ? '进入分析' : '敬请期待'}}</text>
+        <text class="tool-arrow">{{item.status === 'available' ? '→' : '·'}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="feature-panel">
+    <view class="feature-head">
+      <text class="section-kicker">ANALYSIS LAYERS</text>
+      <text class="section-title">从图表到判断</text>
+    </view>
+    <view class="feature-grid">
+      <view class="feature-item">
+        <view class="feature-icon structure-icon"><view></view><view></view><view></view></view>
+        <text class="feature-title">大周期先行</text>
+        <text class="feature-copy">先方向，后形态</text>
+      </view>
+      <view class="feature-item">
+        <view class="feature-icon pattern-icon"><view></view><view></view><view></view></view>
+        <text class="feature-title">重要形态</text>
+        <text class="feature-copy">自动筛选冲突</text>
+      </view>
+      <view class="feature-item">
+        <view class="feature-icon level-icon"><view></view><view></view></view>
+        <text class="feature-title">关键价位</text>
+        <text class="feature-copy">支撑与阻力</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="risk-note">
+    <view class="risk-line"></view>
+    <text>技术分析用于辅助理解市场结构，不构成收益承诺或投资建议。</text>
+  </view>
+</view>

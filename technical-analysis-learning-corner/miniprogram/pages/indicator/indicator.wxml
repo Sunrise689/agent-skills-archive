@@ -1,0 +1,67 @@
+<view class="tool-page">
+  <contact-prompt></contact-prompt>
+  <view class="tool-hero">
+    <text class="eyebrow">ADAPTIVE INDICATOR LAB</text>
+    <text class="tool-title">指标大师</text>
+    <text class="tool-lead">一次只看一个指标。系统逐项测试历史参数，把复杂数字翻译成看得懂的市场状态。</text>
+    <view class="concept-row"><text class="concept-pill">参数自适应</text><text class="concept-pill">历史适配度</text><text class="concept-pill">风险分区</text></view>
+  </view>
+
+  <view class="panel">
+    <text class="panel-title">选择指标</text><text class="panel-subtitle">MACD 看历史动量，KDJ 与 RSI 看敏感区，SuperTrend 看趋势切换；信息离散度只描述历史涨跌的集中或分散程度。</text>
+    <view class="indicator-tabs">
+      <view wx:for="{{indicators}}" wx:key="key" class="indicator-tab {{indicator === item.key ? 'active' : ''}}" data-key="{{item.key}}" bindtap="selectIndicator"><text class="tab-name">{{item.name}}</text><text class="tab-copy">{{item.copy}}</text></view>
+    </view>
+    <text class="field-label">回看周期</text>
+    <view class="choice-row"><view wx:for="{{yearsList}}" wx:key="*this" class="choice {{years === item ? 'active' : ''}}" data-value="{{item}}" bindtap="selectYears">{{item}} 年</view></view>
+    <text class="field-label">市场代码</text>
+    <view class="symbol-row"><input class="symbol-input" value="{{symbol}}" bindinput="handleInput" confirm-type="search" bindconfirm="run" /><button class="primary-button" loading="{{loading}}" bindtap="run">{{loading ? '优化中' : '优化参数'}}</button></view>
+    <view wx:if="{{symbolSuggestions.length}}" class="symbol-suggestions">
+      <text class="suggestion-title">可识别标的，点击使用</text>
+      <view wx:for="{{symbolSuggestions}}" wx:key="symbol" class="suggestion-item" data-symbol="{{item.symbol}}" bindtap="selectSymbolSuggestion">
+        <view class="suggestion-main"><text class="suggestion-name">{{item.name}}</text><text class="suggestion-type">{{item.type}}</text></view>
+        <text class="suggestion-code">{{item.display}}</text>
+      </view>
+    </view>
+    <text class="service-note">提示：云端分析服务偶尔会有短暂卡顿；如未及时返回，请稍等片刻后再试，或多试几次。</text>
+  </view>
+
+    <view wx:if="{{result}}" class="panel">
+    <view class="result-head"><view><text class="asset-name">{{result.name}}</text><text class="asset-meta">{{result.symbol}} · {{currentName}} · {{result.updatedAt}}</text><text class="asset-meta">{{result.coverageNote}}</text></view><text class="status-chip">历史适配</text></view>
+    <block wx:if="{{result.indicator === 'id'}}">
+      <view class="id-hero"><text class="id-character">{{result.special.character}}</text><text class="id-score">信息离散度 {{result.special.value}} · 前五个波动日贡献 {{result.special.largestFiveDaySharePct}}%</text><text class="explain-text">{{result.special.interpretation}}</text></view>
+      <view class="notice">{{result.special.sourceNote}}</view>
+    </block>
+    <block wx:else>
+      <view class="state-card"><text class="state-label">CURRENT STATE</text><text class="state-text">{{result.status.state}}</text></view>
+      <text class="section-caption">OPTIMAL PARAMETERS</text>
+      <view wx:for="{{parameters}}" wx:key="key" class="parameter-row"><text class="parameter-key">{{item.label}}</text><text class="parameter-value">{{item.value}}</text></view>
+      <view class="metric-grid">
+        <view class="metric"><text class="metric-label">盈利因子</text><text class="metric-value">{{result.best.profitFactor}}</text><text class="metric-note">历史收益/历史亏损</text></view>
+        <view class="metric"><text class="metric-label">信号胜率</text><text class="metric-value">{{result.best.winRate}}%</text><text class="metric-note">共 {{result.best.trades}} 次历史交易</text></view>
+        <view class="metric"><text class="metric-label">区间收益</text><text class="metric-value">{{result.best.returnPct}}%</text><text class="metric-note">按次日执行模拟</text></view>
+        <view class="metric"><text class="metric-label">最大回撤</text><text class="metric-value">{{result.best.maxDrawdownPct}}%</text><text class="metric-note">历史路径风险</text></view>
+      </view>
+      <text class="section-caption">RECENT CHANGES</text>
+      <view wx:if="{{result.signals.length}}" class="signal-list"><view wx:for="{{result.signals}}" wx:key="date" class="signal-row"><text>{{item.date}} · {{item.price}}</text><text class="{{item.type === 'buy' ? 'signal-buy' : 'signal-risk'}}">{{item.label}}</text></view></view>
+      <view wx:else class="empty">近期没有新的状态切换</view>
+      <view class="notice">{{result.methodNote}}</view>
+    </block>
+    <view wx:if="{{result.chart}}" class="chart-box indicator-chart-box">
+      <view class="chart-head"><view><text class="chart-title">{{result.chart.displayMode === 'trend' ? '平滑趋势主图 · 指标副图' : '价格主图 · 指标副图'}}</text><text class="chart-subtitle">{{result.chart.displayMode === 'trend' ? '长周期隐藏日内噪声，只保留大趋势曲线。' : '虚线为历史参考位，竖线标出近期状态切换。'}}</text></view><text class="chart-count">{{result.chart.displayMode === 'trend' ? '趋势视图' : result.chart.candles.length + ' 根'}}</text></view>
+      <canvas type="2d" id="indicatorCanvas" class="tool-canvas indicator-canvas"></canvas>
+      <view class="legend-row">
+        <view wx:for="{{result.chart.mainSeries}}" wx:key="label" class="legend"><view class="legend-line" style="background-color: {{item.color}};"></view><text>{{item.label}}</text></view>
+        <view wx:for="{{result.chart.subSeries}}" wx:key="label" class="legend"><view class="legend-line" style="background-color: {{item.color}};"></view><text>{{item.label}}</text></view>
+      </view>
+    </view>
+  </view>
+
+  <button class="knowledge-link" bindtap="openKnowledge">
+    <view class="knowledge-copy"><text class="knowledge-kicker">知识库入口</text><text class="knowledge-title">点击查看 {{currentName}} 指标知识说明</text><text class="knowledge-subtitle">了解定义、参数与历史复盘用法</text></view>
+    <text class="knowledge-arrow">›</text>
+  </button>
+
+  <view class="panel"><text class="explain-title">为什么参数会不同？</text><text class="explain-text">经典参数来自特定年代和市场经验，不一定适合所有资产。这里按 1 个单位逐项搜索，但仍设置最低信号次数，防止只靠一两次巧合得到“漂亮结果”。</text></view>
+  <text class="disclaimer">本页用于历史指标学习与复盘，不评价资产优劣，不预测未来，也不构成投资建议。</text>
+</view>

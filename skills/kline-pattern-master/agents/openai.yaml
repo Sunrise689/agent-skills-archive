@@ -1,7 +1,0 @@
-interface:
-  display_name: "K线形态大师"
-  short_description: "生成并校验多周期K线技术分析报告"
-  default_prompt: "Use $kline-pattern-master to analyze a market symbol and generate a validated monthly, weekly, and daily PDF report."
-
-policy:
-  allow_implicit_invocation: true

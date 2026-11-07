@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chart/chart",
+    "pages/sma/sma",
+    "pages/indicator/indicator",
+    "pages/chan/chan",
+    "pages/analysis/analysis",
+    "pages/contact/contact",
+    "pages/library/library"
+  ],
+  "window": {
+    "navigationBarTitleText": "技术分析学习角",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F8F9FD",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#787B86",
+    "selectedColor": "#2962FF",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "分析"
+      },
+      {
+        "pagePath": "pages/library/library",
+        "text": "知识库"
+      }
+    ]
+  },
+  "style": "v2",
+  "usingComponents": {
+    "contact-prompt": "/components/contact-prompt/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

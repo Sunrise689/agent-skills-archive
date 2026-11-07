@@ -1,0 +1,37 @@
+{
+  "schema": "smart-agent-comparison-suite-v1",
+  "frozenAt": "2026-11-01",
+  "purpose": "Engineering smoke comparison only; no statistical or general superiority claim.",
+  "conditions": {
+    "arms": ["traditional", "smart"],
+    "sameProvider": true,
+    "sameGoalPerTask": true,
+    "sameInputsPerTask": true,
+    "separateWorkspaces": true,
+    "subAgents": false,
+    "timeoutMs": 240000,
+    "maxWorkerTurns": 4,
+    "orderPerTask": ["traditional", "smart"],
+    "runsPerArm": 1
+  },
+  "tasks": [
+    {
+      "id": "instant-file",
+      "goal": "Create answer.txt in the current workspace containing exactly alpha-beta. Read or otherwise verify the file before finishing. Do not modify other files.",
+      "inputs": {},
+      "expectedFiles": { "answer.txt": "alpha-beta" }
+    },
+    {
+      "id": "vertical-transform",
+      "goal": "Read source.txt, add the two numeric values, create total.txt containing exactly the resulting integer, and verify the output before finishing. Do not modify source.txt or other files.",
+      "inputs": { "source.txt": "alpha=10\nbeta=32\n" },
+      "expectedFiles": { "total.txt": "42" }
+    },
+    {
+      "id": "horizontal-synthesis",
+      "goal": "Read both frontend.txt and backend.txt. If both contain READY, create release.txt containing exactly ready; otherwise create release.txt containing exactly blocked. Verify the output before finishing. Do not modify the input files.",
+      "inputs": { "frontend.txt": "frontend: READY\n", "backend.txt": "backend: READY\n" },
+      "expectedFiles": { "release.txt": "ready" }
+    }
+  ]
+}

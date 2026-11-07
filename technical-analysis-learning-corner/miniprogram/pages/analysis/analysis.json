@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "技术分析学习角",
+  "usingComponents": {
+    "kline-chart": "/components/kline-chart/index"
+  }
+}

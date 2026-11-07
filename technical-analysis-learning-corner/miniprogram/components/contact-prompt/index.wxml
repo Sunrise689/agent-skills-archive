@@ -1,0 +1,7 @@
+<view wx:if="{{visible}}" class="contact-prompt">
+  <view class="contact-prompt-main" bindtap="open">
+    <text class="contact-prompt-label">意见反馈 / 商务合作</text>
+    <text class="contact-prompt-email">yuanxing@coze.email · 点击查看</text>
+  </view>
+  <text class="contact-prompt-close" catchtap="close">×</text>
+</view>

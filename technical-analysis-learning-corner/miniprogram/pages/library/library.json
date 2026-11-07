@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "知识库",
+  "usingComponents": {
+    "pattern-sketch": "/components/pattern-sketch/index"
+  }
+}

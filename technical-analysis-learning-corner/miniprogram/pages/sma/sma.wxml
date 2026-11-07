@@ -1,0 +1,79 @@
+<view class="tool-page">
+  <contact-prompt></contact-prompt>
+  <view class="tool-hero">
+    <text class="eyebrow">MOVING AVERAGE LAB</text>
+    <text class="tool-title">均线无忧</text>
+    <text class="tool-lead">自动寻找单均线、双均线与三均线方案，也可以只看平滑中间线、乖离率分位和价格回拉方向。</text>
+    <view class="concept-row">
+      <text class="concept-pill">平均持仓成本</text><text class="concept-pill">安全边际</text><text class="concept-pill">乖离分位</text>
+    </view>
+  </view>
+
+  <view class="panel">
+    <text class="panel-title">开始计算</text>
+    <text class="panel-subtitle">选择回看年限。更长周期更适合评估长期成本线。</text>
+    <text class="field-label">回看周期</text>
+    <view class="choice-row">
+      <view wx:for="{{yearsList}}" wx:key="*this" class="choice {{years === item ? 'active' : ''}}" data-value="{{item}}" bindtap="selectYears">{{item}} 年</view>
+    </view>
+    <text class="field-label">均线方案</text>
+    <view class="choice-row">
+      <view wx:for="{{methods}}" wx:key="key" class="choice {{method === item.key ? 'active' : ''}}" data-value="{{item.key}}" bindtap="selectMethod">{{item.label}}</view>
+    </view>
+    <text class="field-label">筛选模式</text>
+    <view class="choice-row">
+      <view wx:for="{{modes}}" wx:key="key" class="choice {{mode === item.key ? 'active' : ''}}" data-value="{{item.key}}" bindtap="selectMode">{{item.label}}</view>
+    </view>
+    <text class="field-label">市场代码</text>
+    <view class="symbol-row">
+      <input class="symbol-input" value="{{symbol}}" bindinput="handleInput" confirm-type="search" bindconfirm="run" />
+      <button class="primary-button" loading="{{loading}}" bindtap="run">{{loading ? '计算中' : '开始计算'}}</button>
+    </view>
+    <view wx:if="{{symbolSuggestions.length}}" class="symbol-suggestions">
+      <text class="suggestion-title">可识别标的，点击使用</text>
+      <view wx:for="{{symbolSuggestions}}" wx:key="symbol" class="suggestion-item" data-symbol="{{item.symbol}}" bindtap="selectSymbolSuggestion">
+        <view class="suggestion-main"><text class="suggestion-name">{{item.name}}</text><text class="suggestion-type">{{item.type}}</text></view>
+        <text class="suggestion-code">{{item.display}}</text>
+      </view>
+    </view>
+    <text class="service-note">提示：云端分析服务偶尔会有短暂卡顿；如未及时返回，请稍等片刻后再试，或多试几次。</text>
+  </view>
+
+  <view wx:if="{{result}}" class="panel">
+    <view class="result-head">
+      <view><text class="asset-name">{{result.name}}</text><text class="asset-meta">{{result.symbol}} · {{methodLabel}} · {{modeLabel}} · 更新至 {{result.updatedAt}}</text></view>
+      <text class="status-chip">{{result.bias.zone}}</text>
+    </view>
+    <view class="selected-plan"><text class="selected-plan-title">当前方案：{{methodLabel}}</text><text class="selected-plan-copy">{{method === 'midline' ? '中间线模式：用历史乖离率分位数观察价格离中心有多远。' : '周期 ' + selectedPeriodsLabel + ' 日；'}}{{result.modeNote}}</text><text class="coverage-note">{{result.coverageNote}}</text></view>
+    <view class="chart-box"><view class="chart-head"><view><text class="chart-title">历史价格与均线方案</text><text class="chart-subtitle">末端标签显示最新值，点击 K 线可查看单日数据。</text></view><text class="chart-count">{{result.chart.length}} 点</text></view><canvas type="2d" id="maCanvas" class="tool-canvas"></canvas>
+      <view class="legend-row"><view wx:for="{{result.chartLines}}" wx:key="period" class="legend"><view class="legend-line selected-line" style="background-color: {{item.color}};"></view><text>{{item.label}}</text></view><view wx:for="{{result.valleyLines}}" wx:key="period" class="legend"><view class="legend-line" style="background-color: {{item.color}};"></view><text>{{item.label}}</text></view><view class="legend"><view class="legend-line gray"></view><text>收盘价</text></view><view class="legend"><view class="legend-line"></view><text>中间线</text></view><view class="legend"><view class="legend-line orange"></view><text>便宜线</text></view><view class="legend"><view class="legend-line green"></view><text>无忧线</text></view></view>
+    </view>
+    <view class="metric-grid">
+      <view wx:if="{{method === 'single'}}" class="metric"><text class="metric-label">当前单均线</text><text class="metric-value">MA {{result.single.period}}</text><text class="metric-note">盈利因子 {{result.single.profitFactor}} · {{result.single.trades}} 次</text></view>
+      <view wx:if="{{method === 'cross'}}" class="metric"><text class="metric-label">当前双均线</text><text class="metric-value">{{result.dual.fast}} / {{result.dual.slow}}</text><text class="metric-note">盈利因子 {{result.dual.profitFactor}} · 胜率 {{result.dual.winRate}}%</text></view>
+      <view wx:if="{{method === 'triple'}}" class="metric"><text class="metric-label">当前三均线</text><text class="metric-value">{{result.triple.fast}} / {{result.triple.middle}} / {{result.triple.slow}}</text><text class="metric-note">盈利因子 {{result.triple.profitFactor}} · 胜率 {{result.triple.winRate}}%</text></view>
+      <view class="metric"><text class="metric-label">中间线乖离</text><text class="metric-value">{{result.bias.valuePct}}%</text><text class="metric-note">历史第 {{result.bias.percentile}} 分位 · {{result.bias.zone}}</text></view>
+      <view class="metric"><text class="metric-label">中间线估值</text><text class="metric-value">{{result.centerline.value}}</text><text class="metric-note">平滑价格 OLS 趋势</text></view>
+    </view>
+    <view wx:if="{{method === 'midline'}}" class="pull-card"><view class="pull-card-head"><view><text class="pull-title">价格回拉方向 {{result.bias.arrow}}</text><text class="pull-copy">{{result.bias.directionText}}</text></view><text class="zone-chip {{result.bias.zone === '偏热区' ? 'hot' : result.bias.zone === '偏冷区' ? 'cold' : 'normal'}}">{{result.bias.zone}}</text></view><view class="pull-track"><view class="pull-center"></view><view class="pull-price {{result.bias.direction}}"></view><view class="pull-arrow {{result.bias.direction}}">{{result.bias.arrow}}</view></view><view class="pull-axis"><text>偏冷</text><text>中间线</text><text>偏热</text></view></view>
+    <view class="distribution-card"><view class="distribution-head"><view><text class="distribution-title">乖离率历史分布</text><text class="distribution-copy">当前分位 {{result.bias.percentile}}% · {{result.bias.zone}}</text></view><text class="distribution-value">{{result.bias.valuePct}}%</text></view><view class="distribution-bars"><view wx:for="{{result.bias.distribution}}" wx:key="label" class="distribution-bar-wrap {{item.active ? 'active' : ''}}"><view class="distribution-bar" style="height: {{item.height}}%;"></view></view></view><view class="distribution-axis"><text>偏冷</text><text>常态</text><text>偏热</text></view></view>
+    <view wx:if="{{result.valleySignals.length}}" class="valley-card"><text class="valley-title">银山谷 / 金山谷参考</text><view wx:for="{{result.valleySignals}}" wx:key="date" class="valley-row"><text>{{item.date}} · {{item.label}}</text><text>{{item.price}}</text></view><text class="valley-note">采用 5/10/30 日均线的传统形态标记；国际技术分析通常称为三重均线看涨交叉。</text></view>
+    <view class="bias-bar"><view class="bias-pin" style="margin-left: {{result.bias.percentile}}%;"></view></view>
+    <view wx:if="{{result.safety.available}}" class="safety-zone">
+      <text class="safety-title">长期安全边际候选区</text>
+      <view class="safety-line"><text>便宜线 · MA {{result.safety.cheap.period}}</text><text>{{result.safety.cheap.value}}</text></view>
+      <view class="safety-line"><text>无忧线 · MA {{result.safety.worryFree.period}}</text><text>{{result.safety.worryFree.value}}</text></view>
+      <text class="explain-text">{{result.safety.note}}</text>
+    </view>
+    <view wx:else class="notice warn">当前没有满足长期稳定性与历史修复条件的安全线：{{result.safety.reason}}。这类资产不应为了“看起来便宜”而强行定义安全边际。</view>
+    <view class="notice">{{result.bias.interpretation}}</view>
+  </view>
+
+  <view class="panel">
+    <text class="explain-title">怎么看均线？</text>
+    <text class="explain-text">移动平均线可以理解为一段时间内市场的平均成本。价格离长期平均成本太远时，往往会产生回归力量；但趋势已经走坏时，低于均线并不自动等于便宜。</text>
+    <text class="explain-title" style="margin-top:20rpx;">什么是乖离率？</text>
+    <text class="explain-text">乖离率就是价格离中间线有多远。这里把当前乖离放进自身历史分布中比较：高分位代表偏热，低分位代表偏冷；回拉箭头只表示统计上的回归方向，不是确定买卖信号。</text>
+  </view>
+  <text class="disclaimer">历史适配结果不代表未来收益；便宜线、无忧线是候选成本区，不是保本承诺。</text>
+</view>

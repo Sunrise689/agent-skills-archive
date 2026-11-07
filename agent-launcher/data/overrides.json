@@ -1,0 +1,18 @@
+{
+  "cx-luna": {
+    "force": null,
+    "deny": []
+  },
+  "oc-free": {
+    "force": null,
+    "deny": []
+  },
+  "cc-free": {
+    "force": null,
+    "deny": []
+  },
+  "ollama-local": {
+    "force": null,
+    "deny": []
+  }
+}

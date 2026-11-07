@@ -1,0 +1,30 @@
+@import "../../styles/tool-page.wxss";
+.safety-zone { margin-top: 18rpx; padding: 22rpx; border: 1rpx solid #dceee8; border-radius: 18rpx; background: linear-gradient(135deg, #f1fbf7, #ffffff); }
+.safety-title { display: block; color: #087e6b; font-size: 27rpx; font-weight: 750; }
+.safety-line { display: flex; justify-content: space-between; margin-top: 14rpx; color: #555b66; font-size: 23rpx; }
+.bias-bar { height: 12rpx; margin-top: 18rpx; border-radius: 999rpx; background: linear-gradient(90deg,#83d9c7 0%,#e8e9ee 45%,#ff9ca5 100%); overflow: visible; }
+.bias-pin { width: 18rpx; height: 18rpx; margin-top: -3rpx; border: 4rpx solid #fff; border-radius: 50%; background: #131722; box-shadow: 0 2rpx 8rpx rgba(0,0,0,.24); transform: translateX(-9rpx); }
+.selected-plan { margin-top: 18rpx; padding: 18rpx 20rpx; border-radius: 16rpx; background: #f1f4ff; }
+.selected-plan-title { display: block; color: #2962ff; font-size: 24rpx; font-weight: 750; }
+.selected-plan-copy { display: block; margin-top: 6rpx; color: #6a6d78; font-size: 21rpx; line-height: 1.6; }
+.coverage-note { display: block; margin-top: 6rpx; color: #8b909c; font-size: 19rpx; line-height: 1.45; }
+.pull-card, .distribution-card { margin-top: 18rpx; padding: 22rpx; border-radius: 18rpx; border: 1rpx solid #e3e7f2; background: linear-gradient(135deg, #f7f9ff, #ffffff); }
+.pull-card-head, .distribution-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18rpx; }
+.pull-title, .distribution-title { display: block; color: #1f2b52; font-size: 26rpx; font-weight: 750; }
+.pull-copy, .distribution-copy { display: block; margin-top: 6rpx; color: #777d8e; font-size: 20rpx; line-height: 1.5; }
+.zone-chip { flex: none; padding: 8rpx 14rpx; border-radius: 999rpx; background: #eef0f4; color: #737986; font-size: 19rpx; }
+.zone-chip.hot { background: #fff0f1; color: #d84d5a; }.zone-chip.cold { background: #eaf8f5; color: #087e6b; }.zone-chip.normal { background: #eef2ff; color: #2962ff; }
+.pull-track { position: relative; height: 92rpx; margin: 18rpx 12rpx 0; border-radius: 999rpx; background: linear-gradient(90deg, #b9e7dc 0%, #edf0f5 48%, #ffc2c8 100%); }
+.pull-center, .pull-price, .pull-arrow { position: absolute; top: 50%; transform: translate(-50%, -50%); }
+.pull-center { left: 50%; width: 4rpx; height: 68rpx; border-radius: 4rpx; background: #2962ff; box-shadow: 0 0 0 6rpx rgba(41,98,255,.12); }
+.pull-price { width: 22rpx; height: 22rpx; border: 5rpx solid #fff; border-radius: 50%; background: #f23645; box-shadow: 0 4rpx 12rpx rgba(19,23,34,.2); }
+.pull-price.up { left: 78%; }.pull-price.down { left: 22%; }.pull-price.flat { left: 50%; background: #8a909b; }
+.pull-arrow { color: #1f2430; font-size: 34rpx; font-weight: 800; animation-duration: 1.4s; animation-iteration-count: infinite; }
+.pull-arrow.up { left: 67%; color: #d84d5a; animation-name: pull-down; }.pull-arrow.down { left: 33%; color: #087e6b; animation-name: pull-up; }.pull-arrow.flat { left: 50%; color: #8a909b; }
+.pull-axis, .distribution-axis { display: flex; justify-content: space-between; margin-top: 8rpx; color: #9a9da6; font-size: 18rpx; }
+.distribution-value { color: #2962ff; font-size: 29rpx; font-weight: 800; }
+.distribution-bars { display: flex; align-items: flex-end; gap: 6rpx; height: 118rpx; margin-top: 18rpx; padding: 0 6rpx; border-bottom: 1rpx solid #dfe3ea; }
+.distribution-bar-wrap { display: flex; flex: 1; align-items: flex-end; height: 100%; }.distribution-bar { width: 100%; min-height: 8rpx; border-radius: 6rpx 6rpx 0 0; background: #cdd3df; }.distribution-bar-wrap.active .distribution-bar { background: #2962ff; box-shadow: 0 0 0 3rpx rgba(41,98,255,.12); }
+.valley-card { margin-top: 18rpx; padding: 20rpx 22rpx; border: 1rpx solid #f0e3c5; border-radius: 18rpx; background: #fffbf1; }.valley-title { display: block; color: #8b6500; font-size: 25rpx; font-weight: 750; }.valley-row { display: flex; justify-content: space-between; margin-top: 12rpx; color: #666b77; font-size: 21rpx; }.valley-note { display: block; margin-top: 12rpx; color: #9a8a62; font-size: 18rpx; line-height: 1.5; }
+@keyframes pull-down { 0%,100% { transform: translate(-50%, -50%) translateY(-8rpx); } 50% { transform: translate(-50%, -50%) translateY(8rpx); } }
+@keyframes pull-up { 0%,100% { transform: translate(-50%, -50%) translateY(8rpx); } 50% { transform: translate(-50%, -50%) translateY(-8rpx); } }

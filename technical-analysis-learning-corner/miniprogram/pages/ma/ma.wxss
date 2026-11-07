@@ -1,0 +1,9 @@
+@import "../../styles/tool-page.wxss";
+.safety-zone { margin-top: 18rpx; padding: 22rpx; border: 1rpx solid #dceee8; border-radius: 18rpx; background: linear-gradient(135deg, #f1fbf7, #ffffff); }
+.safety-title { display: block; color: #087e6b; font-size: 27rpx; font-weight: 750; }
+.safety-line { display: flex; justify-content: space-between; margin-top: 14rpx; color: #555b66; font-size: 23rpx; }
+.bias-bar { height: 12rpx; margin-top: 18rpx; border-radius: 999rpx; background: linear-gradient(90deg,#83d9c7 0%,#e8e9ee 45%,#ff9ca5 100%); overflow: visible; }
+.bias-pin { width: 18rpx; height: 18rpx; margin-top: -3rpx; border: 4rpx solid #fff; border-radius: 50%; background: #131722; box-shadow: 0 2rpx 8rpx rgba(0,0,0,.24); transform: translateX(-9rpx); }
+.selected-plan { margin-top: 18rpx; padding: 18rpx 20rpx; border-radius: 16rpx; background: #f1f4ff; }
+.selected-plan-title { display: block; color: #2962ff; font-size: 24rpx; font-weight: 750; }
+.selected-plan-copy { display: block; margin-top: 6rpx; color: #6a6d78; font-size: 21rpx; line-height: 1.6; }

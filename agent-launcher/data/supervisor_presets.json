@@ -1,0 +1,125 @@
+{
+  "version": "2026-10-18-personal-repair",
+  "supervisor": {
+    "model": "gpt-6-luna",
+    "effort": "high"
+  },
+  "verification": "Offline command/profile verification only; latest instruction prohibits launching model cards.",
+  "supplies": [
+    {
+      "supplier": "Codex official",
+      "roles": {
+        "L": {
+          "profile_id": "CX-L-OFFICIAL",
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "write_scope": "workspace-write"
+        },
+        "U": {
+          "profile_id": "CX-U-OFFICIAL",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "write_scope": "workspace-write"
+        },
+        "B": {
+          "profile_id": "CX-B-OFFICIAL",
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "write_scope": "workspace-write"
+        }
+      }
+    },
+    {
+      "supplier": "Ark Agent Plan",
+      "roles": {
+        "L": {
+          "profile_id": "OC-L-ARK",
+          "model": "ark-code-latest",
+          "effort": "high",
+          "write_scope": "workspace-write"
+        },
+        "U": {
+          "profile_id": "OC-U-ARK",
+          "model": "ark-code-latest",
+          "effort": "high",
+          "write_scope": "workspace-write"
+        },
+        "B": {
+          "profile_id": "OC-B-ARK",
+          "model": "ark-code-latest",
+          "effort": "high",
+          "write_scope": "workspace-write"
+        }
+      }
+    },
+    {
+      "supplier": "MiniMax Coding Plan",
+      "roles": {
+        "L": {
+          "profile_id": "CC-L",
+          "model": "MiniMax-M3.1-Flash",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        },
+        "U": {
+          "profile_id": "CC-U",
+          "model": "MiniMax-M3.1-Flash",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        },
+        "B": {
+          "profile_id": "CX-B",
+          "model": "MiniMax-M3.1-Flash",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        }
+      }
+    },
+    {
+      "supplier": "OpenRouter free",
+      "roles": {
+        "L": {
+          "profile_id": "OC-L",
+          "model": "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        },
+        "U": {
+          "profile_id": "OC-U",
+          "model": "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        },
+        "B": {
+          "profile_id": "CX-B",
+          "model": "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        }
+      }
+    },
+    {
+      "supplier": "OpenCode Go free",
+      "roles": {
+        "L": {
+          "profile_id": "OC-L",
+          "model": "opencode-go/longcat-2.5-preview-free",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        },
+        "U": {
+          "profile_id": "OC-U",
+          "model": "opencode-go/longcat-2.5-preview-free",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        },
+        "B": {
+          "profile_id": "CX-B",
+          "model": "opencode-go/longcat-2.5-preview-free",
+          "effort": "max",
+          "write_scope": "workspace-write"
+        }
+      }
+    }
+  ]
+}

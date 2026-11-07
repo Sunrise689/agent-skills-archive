@@ -1,7 +1,0 @@
-# 统一文本行尾为 LF，明确二进制文件类型
-* text=auto eol=lf
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.pdf binary
-*.zip binary

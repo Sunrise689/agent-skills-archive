@@ -1,0 +1,2635 @@
+{
+  "edges": [
+    {
+      "from_kind": "skill",
+      "from": "git-advanced-workflows@diegosouzapw__awesome-omni-skills#2",
+      "to": "git",
+      "evidence": "2026-10-11 act4_recall.py query='git-workflow-and-versioning' -> 'git-advanced-workflows@diegosouzapw__awesome-omni-skills#2' score=7.1; CMI registry 'git': 分布式版本控制; CMI registry records purpose as distributed version control; evidence includes observed git version/path."
+    },
+    {
+      "from_kind": "skill",
+      "from": "git-pushing@diegosouzapw__awesome-omni-skills",
+      "to": "gh",
+      "evidence": "2026-10-11 act4_recall.py query='git-workflow-and-versioning' -> 'git-pushing@diegosouzapw__awesome-omni-skills' score=7.1; CMI registry 'gh': GitHub 官方 CLI：PR/Issue/Release/Actions 全操作; CMI registry records GitHub PR/Issue/Release/Actions operations; evidence-backed CLI entry."
+    },
+    {
+      "from_kind": "skill",
+      "from": "create-branch@diegosouzapw__awesome-omni-skills",
+      "to": "git",
+      "evidence": "2026-10-11 act4_recall.py query='git-workflow-and-versioning' -> 'create-branch@diegosouzapw__awesome-omni-skills' score=7.1; CMI registry 'git': 分布式版本控制; CMI registry records purpose as distributed version control; evidence includes observed git version/path."
+    },
+    {
+      "from_kind": "skill",
+      "from": "ast-refactoring-scripts",
+      "to": "python",
+      "evidence": "2026-10-11 act4_recall.py query='git-workflow-and-versioning' -> 'ast-refactoring-scripts' score=7.1; CMI registry 'python': 本机 Python 3.12 解释器; CMI registry records the local Python 3.12 interpreter; observed as a data/development executor."
+    },
+    {
+      "from_kind": "skill",
+      "from": "antfu-create-pr",
+      "to": "gh",
+      "evidence": "2026-10-11 act4_recall.py query='git-workflow-and-versioning' -> 'antfu-create-pr' score=7.1; CMI registry 'gh': GitHub 官方 CLI：PR/Issue/Release/Actions 全操作; CMI registry records GitHub PR/Issue/Release/Actions operations; evidence-backed CLI entry."
+    },
+    {
+      "from_kind": "skill",
+      "from": "commit-convention",
+      "to": "git",
+      "evidence": "2026-10-11 act4_recall.py query='git-workflow-and-versioning' -> 'commit-convention' score=7.1; CMI registry 'git': 分布式版本控制; CMI registry records purpose as distributed version control; evidence includes observed git version/path."
+    },
+    {
+      "from_kind": "skill",
+      "from": "dependency-manager",
+      "to": "npm",
+      "evidence": "2026-10-11 act4_recall.py query='git-workflow-and-versioning' -> 'dependency-manager' score=7.1; CMI registry 'npm': Node 包管理器; CMI registry records the Node package manager; appropriate for dependency-management tasks."
+    },
+    {
+      "from_kind": "skill",
+      "from": "semantic-versioning@BagelHole__DevOps-Security-Agent-Skills",
+      "to": "git",
+      "evidence": "2026-10-11 act4_recall.py query='git-workflow-and-versioning' -> 'semantic-versioning@BagelHole__DevOps-Security-Agent-Skills' score=7.1; CMI registry 'git': 分布式版本控制; CMI registry records purpose as distributed version control; evidence includes observed git version/path."
+    },
+    {
+      "from_kind": "skill",
+      "from": "code-simplifier@diegosouzapw__awesome-omni-skills",
+      "to": "python",
+      "evidence": "2026-10-11 act4_recall.py query='code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills' -> 'code-simplifier@diegosouzapw__awesome-omni-skills' score=10.4; CMI registry 'python': 本机 Python 3.12 解释器; CMI registry records the local Python 3.12 interpreter; observed as a data/development executor."
+    },
+    {
+      "from_kind": "skill",
+      "from": "code-simplification@addyosmani__agent-skills",
+      "to": "ruff",
+      "evidence": "2026-10-11 act4_recall.py query='code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills' -> 'code-simplification@addyosmani__agent-skills' score=10.4; CMI registry 'ruff': 一体化 Python linter + formatter，比 flake8 快一个量级; CMI registry records Python linting/formatting capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "inline-lambda-functions",
+      "to": "python",
+      "evidence": "2026-10-11 act4_recall.py query='code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills' -> 'inline-lambda-functions' score=10.4; CMI registry 'python': 本机 Python 3.12 解释器; CMI registry records the local Python 3.12 interpreter; observed as a data/development executor."
+    },
+    {
+      "from_kind": "skill",
+      "from": "code-simplifier@brycewang-stanford__Auto-Empirical-Research-Skills",
+      "to": "ruff",
+      "evidence": "2026-10-11 act4_recall.py query='code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills' -> 'code-simplifier@brycewang-stanford__Auto-Empirical-Research-Skills' score=10.4; CMI registry 'ruff': 一体化 Python linter + formatter，比 flake8 快一个量级; CMI registry records Python linting/formatting capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "frontend-dev-guidelines-v2",
+      "to": "prettier",
+      "evidence": "2026-10-11 act4_recall.py query='code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills' -> 'frontend-dev-guidelines-v2' score=10.4; CMI registry 'prettier': 统一格式化 JS/TS/CSS/Markdown; CMI registry records JS/TS/CSS/Markdown formatting capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "python-guidelines",
+      "to": "mypy",
+      "evidence": "2026-10-11 act4_recall.py query='code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills' -> 'python-guidelines' score=10.4; CMI registry 'mypy': Python 静态类型检查; CMI registry records Python static type checking capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "python-guidelines",
+      "to": "ruff",
+      "evidence": "2026-10-11 act4_recall.py query='code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills' -> 'python-guidelines' score=10.4; CMI registry 'ruff': 一体化 Python linter + formatter，比 flake8 快一个量级; CMI registry records Python linting/formatting capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "robustness-table",
+      "to": "python",
+      "evidence": "2026-10-11 act4_recall.py query='data-analysis@brycewang-stanford__Auto-Empirical-Research-Skills' -> 'robustness-table' score=19.4; CMI registry 'python': 本机 Python 3.12 解释器; CMI registry records the local Python 3.12 interpreter; observed as a data/development executor."
+    },
+    {
+      "from_kind": "skill",
+      "from": "pyfixest",
+      "to": "python",
+      "evidence": "2026-10-11 act4_recall.py query='data-analysis@brycewang-stanford__Auto-Empirical-Research-Skills' -> 'pyfixest' score=15.5; CMI registry 'python': 本机 Python 3.12 解释器; CMI registry records the local Python 3.12 interpreter; observed as a data/development executor."
+    },
+    {
+      "from_kind": "skill",
+      "from": "nano-pdf",
+      "to": "mutool",
+      "evidence": "2026-10-11 act4_recall.py query='pdf-official' -> 'nano-pdf' score=13.5; CMI registry 'mutool': MuPDF 的 PDF 渲染/转换/加密命令行; CMI registry records PDF rendering/conversion capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "pdf-extraction-guide",
+      "to": "pdftotext",
+      "evidence": "2026-10-11 act4_recall.py query='pdf-official' -> 'pdf-extraction-guide' score=13.5; CMI registry 'pdftotext': PDF 抽取纯文本/转图片（Poppler 套件）; CMI registry records PDF text extraction capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "markitdown@brycewang-stanford__Auto-Empirical-Research-Skills",
+      "to": "pandoc",
+      "evidence": "2026-10-11 act4_recall.py query='pdf-official' -> 'markitdown@brycewang-stanford__Auto-Empirical-Research-Skills' score=13.5; CMI registry 'pandoc': 万能文档格式互转（md/docx/html/latex/…）; CMI registry records document format conversion including Markdown/Docx/HTML."
+    },
+    {
+      "from_kind": "skill",
+      "from": "doc-to-markdown",
+      "to": "pandoc",
+      "evidence": "2026-10-11 act4_recall.py query='pdf-official' -> 'doc-to-markdown' score=13.5; CMI registry 'pandoc': 万能文档格式互转（md/docx/html/latex/…）; CMI registry records document format conversion including Markdown/Docx/HTML."
+    },
+    {
+      "from_kind": "skill",
+      "from": "press-pdf",
+      "to": "qpdf",
+      "evidence": "2026-10-11 act4_recall.py query='pdf-official' -> 'press-pdf' score=13.5; CMI registry 'qpdf': PDF 结构级处理：解密/合并/拆分/线性化; CMI registry records structural PDF merge/split/linearization capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "ocr-and-documents",
+      "to": "tesseract",
+      "evidence": "2026-10-11 act4_recall.py query='pdf-official' -> 'ocr-and-documents' score=13.5; CMI registry 'tesseract': 开源 OCR 引擎，图片/扫描件转文字（支持中英）; CMI registry records OCR for images/scans, Chinese and English."
+    },
+    {
+      "from_kind": "skill",
+      "from": "docx-official@lingxling__awesome-skills-cn",
+      "to": "soffice",
+      "evidence": "2026-10-11 act4_recall.py query='pdf-official' -> 'docx-official@lingxling__awesome-skills-cn' score=13.5; CMI registry 'soffice': LibreOffice 无头模式，批量转换 Office 文档; CMI registry records headless Office conversion; install state is skipped, so recommendation must disclose that state."
+    },
+    {
+      "from_kind": "skill",
+      "from": "pdf-conversion-router",
+      "to": "mutool",
+      "evidence": "2026-10-11 act4_recall.py query='pdf-official' -> 'pdf-conversion-router' score=13.5; CMI registry 'mutool': MuPDF 的 PDF 渲染/转换/加密命令行; CMI registry records PDF rendering/conversion capability."
+    },
+    {
+      "from_kind": "skill",
+      "from": "youtube-downloader@video-downloader",
+      "to": "yt-dlp",
+      "evidence": "2026-10-11 act4_recall.py query='video-edit' -> 'youtube-downloader@video-downloader' score=7.7; CMI registry 'yt-dlp': 从上千个网站下载音视频并转封装; CMI registry records downloading audio/video from many websites and remuxing."
+    },
+    {
+      "from_kind": "skill",
+      "from": "ffmpeg@alivirgo__Major-AI-Skills",
+      "to": "ffmpeg",
+      "evidence": "2026-10-11 act4_recall.py query='video-edit' -> 'ffmpeg@alivirgo__Major-AI-Skills' score=7.7; CMI registry 'ffmpeg': 视频音频转码/裁剪/压制/抽帧的行业标准; CMI registry records video/audio conversion, trimming, encoding, and frame extraction."
+    },
+    {
+      "from_kind": "skill",
+      "from": "losslesscut",
+      "to": "ffmpeg",
+      "evidence": "2026-10-11 act4_recall.py query='video-edit' -> 'losslesscut' score=7.7; CMI registry 'ffmpeg': 视频音频转码/裁剪/压制/抽帧的行业标准; CMI registry records video/audio conversion, trimming, encoding, and frame extraction."
+    },
+    {
+      "from_kind": "skill",
+      "from": "remotion@alivirgo__Major-AI-Skills",
+      "to": "node",
+      "evidence": "2026-10-11 act4_recall.py query='video-edit' -> 'remotion@alivirgo__Major-AI-Skills' score=7.7; CMI registry 'node': JavaScript/TypeScript 运行时; CMI registry records the JavaScript/TypeScript runtime."
+    },
+    {
+      "from_kind": "skill",
+      "from": "media-processor",
+      "to": "ffmpeg",
+      "evidence": "2026-10-11 act4_recall.py query='video-edit' -> 'media-processor' score=7.7; CMI registry 'ffmpeg': 视频音频转码/裁剪/压制/抽帧的行业标准; CMI registry records video/audio conversion, trimming, encoding, and frame extraction."
+    },
+    {
+      "from_kind": "cli",
+      "from": "ping",
+      "to": "greploop",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ping",
+      "to": "ffuf-web-fuzzing-v2@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ping",
+      "to": "git-hooks-automation-v2@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tracert",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ftp",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "systeminfo",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "reg",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "mingw32-make",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "bat",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "eza",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "busybox",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "wget2",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "magick",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "procs",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "hyperfine",
+      "to": "greploop",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "cli",
+      "from": "hyperfine",
+      "to": "ffuf-web-fuzzing-v2@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "cli",
+      "from": "hyperfine",
+      "to": "git-hooks-automation-v2@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "cli",
+      "from": "just",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.31"
+    },
+    {
+      "from_kind": "cli",
+      "from": "deno",
+      "to": "greploop",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "cli",
+      "from": "deno",
+      "to": "ffuf-web-fuzzing-v2@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "cli",
+      "from": "deno",
+      "to": "git-hooks-automation-v2@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.98"
+    },
+    {
+      "from_kind": "repo",
+      "from": "DietrichGebert__ponytail",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=8.78"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Homebrew__brew",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=8.78"
+    },
+    {
+      "from_kind": "repo",
+      "from": "LibreTranslate__LibreTranslate",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=8.27"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FreeCAD__FreeCAD",
+      "to": "makepad-shaders-v3@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=4.85"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FreeCAD__FreeCAD",
+      "to": "3d-web-experience@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=4.85"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FreeCAD__FreeCAD",
+      "to": "3d-games@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=4.85"
+    },
+    {
+      "from_kind": "repo",
+      "from": "SFTtech__openage",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=8.27"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Nixtla__statsforecast",
+      "to": "health-trend-analyzer@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.56"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Nixtla__statsforecast",
+      "to": "sleep-analyzer@diegosouzapw__awesome-omni-skills",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.56"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Nixtla__statsforecast",
+      "to": "apify-trend-analysis@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=7.56"
+    },
+    {
+      "from_kind": "repo",
+      "from": "WebKit__WebKit",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=17.45"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Blazity__enterprise-commerce",
+      "to": "emblemai-crypto-wallet-v2@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=4.94"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Blazity__enterprise-commerce",
+      "to": "shopify-development@diegosouzapw__awesome-omni-skills",
+      "evidence": "20261020-smi-fuse tag-overlap score=4.94"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Blazity__enterprise-commerce",
+      "to": "wordpress-woocommerce-development@diegosouzapw__awesome-omni-skills",
+      "evidence": "20261020-smi-fuse tag-overlap score=4.94"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__cli",
+      "to": "googlesheets-automation-v2@diegosouzapw__awesome-omni-skills",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.72"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__cli",
+      "to": "huggingface-jobs@lingxling__awesome-skills-cn",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.72"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__cli",
+      "to": "terraform-specialist-v3@diegosouzapw__awesome-omni-skills#2",
+      "evidence": "20261020-smi-fuse tag-overlap score=2.72"
+    },
+    {
+      "from_kind": "repo",
+      "from": "SeleniumHQ__selenium",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-fuse tag-overlap score=8.27"
+    },
+    {
+      "from_kind": "cli",
+      "from": "jq",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "rg",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "fd",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "iconv",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "dos2unix",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "unix2dos",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "findstr",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tldr",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "markdown_py",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tar",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "aria2c",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "rclone",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "robocopy",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ffmpeg",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ffprobe",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "pandoc",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "sqlite3",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "python",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "pip",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "uv",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "httpx",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "curl",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ssh",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "scp",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "sftp",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ssh-keygen",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ping",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ping",
+      "to": "3d-retina-resolution",
+      "evidence": "20261020-smi-close tag-overlap score=2.97 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ping",
+      "to": "@Aperivue__medsci-skills",
+      "evidence": "20261020-smi-close tag-overlap score=2.97 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "cli",
+      "from": "pathping",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "netstat",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "nslookup",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ipconfig",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "xh",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "yt-dlp",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tasklist",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "schtasks",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "wevtutil",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "icacls",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "certutil",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "wsl",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "powershell",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tree",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "git",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "gh",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "git-lfs",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tig",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "cmake",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ninja",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "gdb",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "objdump",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "readelf",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "strings",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "node",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "npm",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "pnpm",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "corepack",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "flake8",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "sd",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "lsd",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "delta",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "fzf",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ugrep",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "yq",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "7z",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "zstd",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "md5sum",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "diff",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "wget",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "mkvmerge",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "mediainfo",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "exiftool",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "HandBrakeCLI",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "pdftotext",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "mutool",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "qpdf",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "wkhtmltopdf",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "soffice",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "typst",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "dot",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "d2",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "mmdc",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tesseract",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "xsv",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "mlr",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "csvkit",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "vd",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "sqlite-utils",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "nmap",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "whois",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "openssl",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tshark",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "http",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "pwsh",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "zoxide",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "gdu",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "duf",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "dust",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "procmon",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "lazygit",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "gitleaks",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "shellcheck",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "glab",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "docker",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "podman",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "hyperfine",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "hyperfine",
+      "to": "3d-retina-resolution",
+      "evidence": "20261020-smi-close tag-overlap score=2.97 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "cli",
+      "from": "hyperfine",
+      "to": "@Aperivue__medsci-skills",
+      "evidence": "20261020-smi-close tag-overlap score=2.97 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tokei",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "glow",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "gum",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "deno",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "deno",
+      "to": "3d-retina-resolution",
+      "evidence": "20261020-smi-close tag-overlap score=2.97 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "cli",
+      "from": "deno",
+      "to": "@Aperivue__medsci-skills",
+      "evidence": "20261020-smi-close tag-overlap score=2.97 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "cli",
+      "from": "bun",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "rustup",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "prettier",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "markdownlint",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "http-server",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "tsc",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=missing"
+    },
+    {
+      "from_kind": "cli",
+      "from": "ruff",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "black",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "mypy",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "html2text",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "cli",
+      "from": "pip-audit",
+      "to": "cmi-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=cli source=cmi-registry-20261011 -> cmi-entry 检索入口; install_state=installed"
+    },
+    {
+      "from_kind": "repo",
+      "from": "3441293738__creatorhub",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=A-UGC社交内容: 多平台内容监控/采集/搬运(抖音/小红书) (对应小红书X"
+    },
+    {
+      "from_kind": "repo",
+      "from": "AUTOMATIC1111__stable-diffusion-webui",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=A-UGC社交内容: Stable Diffusion WebUI(小红书图片生"
+    },
+    {
+      "from_kind": "repo",
+      "from": "BetaStreetOmnis__xhs_ai_publisher",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=A-UGC社交内容: AI小红书内容创作+发布桌面工具 (对应小红书XHS)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "HisMax__RedInk",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=A-UGC社交内容: 一站式小红书图文生成(香蕉Pro) (对应小红书XHS)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "HpWens__MeiWidgetView",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=A-UGC社交内容: 自定义控件库(参考小红书UI设计) (对应小红书XHS)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Jamailar__Beav",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=A-UGC社交内容: 小红书AI运营工作台(采集/选题/AI写作) (对应小红书"
+    },
+    {
+      "from_kind": "repo",
+      "from": "JoeanAmier__XHS-Downloader",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=A-UGC社交内容: 小红书链接提取/作品采集 (对应小红书XHS)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Panniantong__Agent-Reach",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=A-UGC社交内容: 小红书/XHS内容代理阅读+AI搜索 (对应小红书XHS)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FossifyOrg__Contacts",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Communication"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FossifyOrg__Messages",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Communication"
+    },
+    {
+      "from_kind": "repo",
+      "from": "SillyTavern__SillyTavern",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Entertainment"
+    },
+    {
+      "from_kind": "repo",
+      "from": "TomBursch__kitchenowl",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Food & Drink"
+    },
+    {
+      "from_kind": "repo",
+      "from": "AuroraOSS__AuroraStore",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Google Play前端/应用商店代理; 对应应用市场/Google Play"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ShareX__ShareX",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Imaging"
+    },
+    {
+      "from_kind": "repo",
+      "from": "KDE__discover",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=KDE软件发现/商店; 对应应用商店"
+    },
+    {
+      "from_kind": "repo",
+      "from": "GNOME__gnome-software",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Linux应用商店/软件中心; 对应应用市场"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Audacity__audacity",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Media"
+    },
+    {
+      "from_kind": "repo",
+      "from": "HandBrake__HandBrake",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Multimedia"
+    },
+    {
+      "from_kind": "repo",
+      "from": "PrestaShop__PrestaShop",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PAY/ecommerce] 对应主流应用: 独立站电商 (Shopify, "
+    },
+    {
+      "from_kind": "repo",
+      "from": "Sylius__Sylius",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PAY/ecommerce] 对应主流应用: 独立站电商 (Shopify, "
+    },
+    {
+      "from_kind": "repo",
+      "from": "GMWalletApp__epusdt",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PAY/payment] 对应主流应用: 支付 SDK/收银 (Stripe,"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Javen205__IJPay",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PAY/payment] 对应主流应用: 支付 SDK/收银 (Stripe,"
+    },
+    {
+      "from_kind": "repo",
+      "from": "BurntSushi__ripgrep",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/code search] 对应主流应用: 代码搜索/代码智能 (Gi"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ComposioHQ__composio",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "DeusData__codebase-memory-mcp",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "DevToys-app__DevToys",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "DietrichGebert__ponytail",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "GoogleChrome__lighthouse",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "Graphify-Labs__graphify",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "JCodesMore__ai-website-cloner-template",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenHands__OpenHands",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "Pythagora-io__gpt-pilot",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "TabbyML__tabby",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "NvChad__NvChad",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/ide] 对应主流应用: IDE/编辑器 (VS Code, Int"
+    },
+    {
+      "from_kind": "repo",
+      "from": "VSCodium__vscodium",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/ide] 对应主流应用: IDE/编辑器 (VS Code, Int"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Homebrew__brew",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/package manager] 对应主流应用: 包管理器 (npm"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Kilo-Org__kilocode",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/vscode extension] 对应主流应用: VS Code "
+    },
+    {
+      "from_kind": "repo",
+      "from": "LawnchairLauncher__lawnchair",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Personalization"
+    },
+    {
+      "from_kind": "repo",
+      "from": "KDE__kdenlive",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Photo & Video"
+    },
+    {
+      "from_kind": "repo",
+      "from": "TeamNewPipe__NewPipe",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Photo & Video"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FossifyOrg__Calendar",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Productivity"
+    },
+    {
+      "from_kind": "repo",
+      "from": "LibreChat-AI__LibreChat",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Productivity"
+    },
+    {
+      "from_kind": "repo",
+      "from": "RSDKModding__RSDKv4-Decompilation",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Retro Engine v4反编译; 原版=Sonic the Hedgeho"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FoundationAgents__MetaGPT",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=SOP; publish-subscribe shared environmen"
+    },
+    {
+      "from_kind": "repo",
+      "from": "DrKLO__Telegram",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Social Networking"
+    },
+    {
+      "from_kind": "repo",
+      "from": "AutoHotkey__AutoHotkey",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=System Tools"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Klocman__Bulk-Crap-Uninstaller",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=System Tools"
+    },
+    {
+      "from_kind": "repo",
+      "from": "PowerShell__PowerShell",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=System Tools"
+    },
+    {
+      "from_kind": "repo",
+      "from": "AI4Finance-Foundation__FinRL",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "CryptoSignal__Crypto-Signal",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "EliteQuant__EliteQuant",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Fincept-Corporation__FinceptTerminal",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "HKUDS__Vibe-Trading",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "JerBouma__FinanceToolkit",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "PyPortfolio__PyPortfolioOpt",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Mathieu2301__TradingView-API",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/backtesting] 对应主流应用: 回测引擎 (Backtr"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenByteInc__QuantDinger",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/backtesting] 对应主流应用: 回测引擎 (Backtr"
+    },
+    {
+      "from_kind": "repo",
+      "from": "LosaLosSantos__aurelio-finance",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/quantitative finance] 对应主流应用: 量化研"
+    },
+    {
+      "from_kind": "repo",
+      "from": "TA-Lib__ta-lib-python",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/quantitative finance] 对应主流应用: 量化研"
+    },
+    {
+      "from_kind": "repo",
+      "from": "UFund-Me__Qbot",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/quantitative finance] 对应主流应用: 量化研"
+    },
+    {
+      "from_kind": "repo",
+      "from": "AI4Finance-Foundation__FinGPT",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/technical analysis] 对应主流应用: 技术指标库"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Drakkar-Software__OctoBot",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/trading bot] 对应主流应用: 自动交易机器人 (3Co"
+    },
+    {
+      "from_kind": "repo",
+      "from": "QuantConnect__Lean",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/trading bot] 对应主流应用: 自动交易机器人 (3Co"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FossifyOrg__Calculator",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Tools"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FossifyOrg__Clock",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Tools"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FossifyOrg__File-Manager",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Tools"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OxygenCobalt__Auxio",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Tools"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ScoopInstaller__Scoop",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Windows包管理/应用商店; 对应应用市场"
+    },
+    {
+      "from_kind": "repo",
+      "from": "MonoGame__MonoGame",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=engine | C# XNA-style | .NET build"
+    },
+    {
+      "from_kind": "repo",
+      "from": "AimesSoft__SakiEngine",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=otome/engine - 国产 Flutter/Dart+Galgame 引"
+    },
+    {
+      "from_kind": "repo",
+      "from": "SonicMastr__renpy-vita",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=otome/port - PSVita 原生 Ren'Py 移植层，冷门但独特"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Bronya-Rand__DDLCModTemplate2.0",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=otome/template - DDLC 同人 mod 工程模板，活跃维护中"
+    },
+    {
+      "from_kind": "repo",
+      "from": "C83Ren__RenPyGitTemplate",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=otome/template - Ren'Py 项目 Git 仓库模板，协作/版"
+    },
+    {
+      "from_kind": "repo",
+      "from": "RuolinZheng08__renpy-template",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=otome/template - 社区最流行 Ren'Py 启动模板（羽毛图标 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "EwenQuim__renpy-graphviz",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=otome/tooling - 从 .rpy 源文件生成剧情流程图，乙女向长线剧"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Next-SEKAI__sonolus-next-sekai-engine",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=rhythm - Sonolus 上的 Project SEKAI 复刻引擎，当"
+    },
+    {
+      "from_kind": "repo",
+      "from": "WaterBoiledPizza__sonolus-psekai-engine",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=rhythm - 早期 Project SEKAI × Sonolus 复刻引擎"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Pure-Peace__Peace",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=server - Go 版 osu! 私服后端，已归档倾向，main 停更于 2"
+    },
+    {
+      "from_kind": "repo",
+      "from": "GuyyaReiki__shiina-web",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=server - Java 前端，面向 bancho.py-ex，插件化生态"
+    },
+    {
+      "from_kind": "repo",
+      "from": "KDENLive__kdenlive",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=专业非线性编辑(NLE); 对应Adobe Premiere Pro / DaV"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FreeCAD__FreeCAD",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=办公软件"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FreeCAD__FreeCAD",
+      "to": "3d-asset-generation",
+      "evidence": "20261020-smi-close tag-overlap score=4.84 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FreeCAD__FreeCAD",
+      "to": "3d-cloth-material",
+      "evidence": "20261020-smi-close tag-overlap score=4.84 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "LibreOffice__core",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=办公/办公套件"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ONLYOFFICE__DesktopEditors",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=办公软件"
+    },
+    {
+      "from_kind": "repo",
+      "from": "GNOME__gimp",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=图形图像"
+    },
+    {
+      "from_kind": "repo",
+      "from": "LibreCAD__LibreCAD",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=图形图像"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Jellyfin__Jellyfin",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体服务器; 对应媒体库管理"
+    },
+    {
+      "from_kind": "repo",
+      "from": "SHAJON-404__iptv",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | IPTV / 网络电视 | 对应主流应用：央视影音 / 咪咕视频"
+    },
+    {
+      "from_kind": "repo",
+      "from": "TechKnoWEB__StreamHub",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | IPTV / 网络电视 | 对应主流应用：央视影音 / 咪咕视频"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Athou__commafeed",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | RSS 阅读器 | 对应主流应用：Feedly / 今日热榜"
+    },
+    {
+      "from_kind": "repo",
+      "from": "DevXDojo__MrRSS",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | RSS 阅读器 | 对应主流应用：Feedly / 今日热榜"
+    },
+    {
+      "from_kind": "repo",
+      "from": "RSSNext__Folo",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | RSS 阅读器 | 对应主流应用：Feedly / 今日热榜"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ReadYouApp__ReadYou",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | RSS 阅读器 | 对应主流应用：Feedly / 今日热榜"
+    },
+    {
+      "from_kind": "repo",
+      "from": "CarGuo__GSYVideoPlayer",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 视频播放器/长视频 | 对应主流应用：爱奇艺 / 腾讯视频 / B"
+    },
+    {
+      "from_kind": "repo",
+      "from": "DIYgod__DPlayer",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 视频播放器/长视频 | 对应主流应用：爱奇艺 / 腾讯视频 / B"
+    },
+    {
+      "from_kind": "repo",
+      "from": "KoljaB__RealtimeSTT",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 语音合成 / 朗读 | 对应主流应用：讯飞语记 / 喜马拉雅"
+    },
+    {
+      "from_kind": "repo",
+      "from": "NVIDIA-NeMo__Speech",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 语音合成 / 朗读 | 对应主流应用：讯飞语记 / 喜马拉雅"
+    },
+    {
+      "from_kind": "repo",
+      "from": "QuentinFuxa__WhisperLiveKit",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 语音合成 / 朗读 | 对应主流应用：讯飞语记 / 喜马拉雅"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Blaizzy__mlx-audio",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 语音合成 / 朗读 | 对应主流应用：讯飞语记 / 喜马拉雅"
+    },
+    {
+      "from_kind": "repo",
+      "from": "BabitMF__bmf",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 转码与流媒体分发 | 对应主流应用：CDN 转码 / 阿里云视频服"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ColinEberhardt__ffmpeg-wasm-streaming-video-player",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 转码与流媒体分发 | 对应主流应用：CDN 转码 / 阿里云视频服"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenVisualCloud__CDN-Transcode-Sample",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 转码与流媒体分发 | 对应主流应用：CDN 转码 / 阿里云视频服"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Synapsr__Hovod",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=媒体资讯 | 转码与流媒体分发 | 对应主流应用：CDN 转码 / 阿里云视频服"
+    },
+    {
+      "from_kind": "repo",
+      "from": "SubtitleEdit__subtitleedit",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=字幕编辑; 对应字幕处理"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Cisco-Talos__clamav",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=安全杀毒"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenTTD__OpenTTD",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=开源重实现; 原版=Transport Tycoon Deluxe"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenRCT2__OpenRCT2",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=引擎重实现; 原版=RollerCoaster Tycoon 2"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FossifyOrg__Gallery",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=摄影与录像"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenShot__openshot-qt",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=摄影与录像"
+    },
+    {
+      "from_kind": "repo",
+      "from": "TryGhost__Ghost",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=效率/笔记|内容管理-Ghost"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ONLYOFFICE__DocumentServer",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=效率/笔记|办公套件-OnlyOffice"
+    },
+    {
+      "from_kind": "repo",
+      "from": "NodeBB__NodeBB",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=效率/笔记|社区论坛-NodeBB"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenBoard-org__OpenBoard",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=教育学习"
+    },
+    {
+      "from_kind": "repo",
+      "from": "LimeSurvey__LimeSurvey",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-在线问卷调查系统(Qualtrics替代)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Maxteabag__sqlit",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-数据库客户端"
+    },
+    {
+      "from_kind": "repo",
+      "from": "MAIF__shapash",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-模型可解释性报表"
+    },
+    {
+      "from_kind": "repo",
+      "from": "SeldonIO__alibi",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-模型可解释性/审计"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Nixtla__statsforecast",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-统计时间序列预测"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Nixtla__statsforecast",
+      "to": "@rlacombe__switchback-running#5",
+      "evidence": "20261020-smi-close tag-overlap score=7.53 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Nixtla__statsforecast",
+      "to": "alpha-vantage-v2",
+      "evidence": "20261020-smi-close tag-overlap score=7.53 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "EpistasisLab__tpot",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-自动机器学习流水线(AutoML)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Canner__WrenAI",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-自然语言生成SQL(数据分析助手)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OtterMind__Chat2DB",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-自然语言生成SQL(数据分析助手)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "TabularisDB__tabularis",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=数据分析-表格数据分析工作台"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Vampyr7878__WoW-Character-Viewer-3D",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=方向1排除候选；Unity；美术许可：依赖WoW原游戏资产，未发现独立复用授权；"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Jasmine5220__fashion-show-prototype",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=方向2弱候选；React/Node/MongoDB，README声称UE5与Bl"
+    },
+    {
+      "from_kind": "repo",
+      "from": "UKPLab__llm-roleplay",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | AI 角色扮演对话 | 对应主流应用：Character.AI / "
+    },
+    {
+      "from_kind": "repo",
+      "from": "CyberTimon__RapidRAW",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 图片编辑/修图 | 对应主流应用：美图秀秀 / Canva"
+    },
+    {
+      "from_kind": "repo",
+      "from": "LongSoft__UEFITool",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 图片编辑/修图 | 对应主流应用：美图秀秀 / Canva"
+    },
+    {
+      "from_kind": "repo",
+      "from": "GiantappMan__livewallpaper",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 壁纸 | 对应主流应用：Wallpaper Engine / 小米主"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Hamza417__Peristyle",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 壁纸 | 对应主流应用：Wallpaper Engine / 小米主"
+    },
+    {
+      "from_kind": "repo",
+      "from": "MapoMagpie__comic-looms",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 漫画阅读 | 对应主流应用：快看漫画 / 腾讯动漫"
+    },
+    {
+      "from_kind": "repo",
+      "from": "NilsLeo__kcc-cloud",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 漫画阅读 | 对应主流应用：快看漫画 / 腾讯动漫"
+    },
+    {
+      "from_kind": "repo",
+      "from": "TEA-ebook__teabook-open-reader",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 电子书阅读 | 对应主流应用：微信读书 / Kindle"
+    },
+    {
+      "from_kind": "repo",
+      "from": "GRVYDEV__Project-Lightspeed",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 直播平台服务端 | 对应主流应用：斗鱼 / 虎牙 / B站直播"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OvenMediaLabs__OvenMediaEngine",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 直播平台服务端 | 对应主流应用：斗鱼 / 虎牙 / B站直播"
+    },
+    {
+      "from_kind": "repo",
+      "from": "HoshinoSuzumi__chronoframe",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 相册 / 云相册 | 对应主流应用：Google Photos / "
+    },
+    {
+      "from_kind": "repo",
+      "from": "TangXiaoLv__TelegramGallery",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 相册 / 云相册 | 对应主流应用：Google Photos / "
+    },
+    {
+      "from_kind": "repo",
+      "from": "Baiyuetribe__glink",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 短视频 | 对应主流应用：抖音 / TikTok / 快手"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Dean1990__MagicCamera",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 美颜相机 / 实时滤镜 | 对应主流应用：美颜相机 / Beauty"
+    },
+    {
+      "from_kind": "repo",
+      "from": "MemeCrafters__meme-generator",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 表情包 / 斗图 | 对应主流应用：微信表情 / 斗图神器"
+    },
+    {
+      "from_kind": "repo",
+      "from": "MemeCrafters__meme-generator-rs",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 表情包 / 斗图 | 对应主流应用：微信表情 / 斗图神器"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ThioJoe__Full-Stack-AI-Meme-Generator",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 表情包 / 斗图 | 对应主流应用：微信表情 / 斗图神器"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Tyrrrz__YoutubeDownloader",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 视频下载 | 对应主流应用：抖音 / 快手 / YouTube"
+    },
+    {
+      "from_kind": "repo",
+      "from": "DIYgod__APlayer",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 音乐播放 | 对应主流应用：网易云音乐 / QQ音乐"
+    },
+    {
+      "from_kind": "repo",
+      "from": "MarshallOfSound__Google-Play-Music-Desktop-Player-UNOFFICIAL-",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 音乐播放 | 对应主流应用：网易云音乐 / QQ音乐"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Moriafly__SaltPlayerSource",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 音乐播放 | 对应主流应用：网易云音乐 / QQ音乐"
+    },
+    {
+      "from_kind": "repo",
+      "from": "IrosTheBeggar__mStream",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 音乐流媒体服务端 | 对应主流应用：网易云音乐 / Spotify"
+    },
+    {
+      "from_kind": "repo",
+      "from": "V1ck3s__octo-fiesta",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=泛娱乐 | 音乐流媒体服务端 | 对应主流应用：网易云音乐 / Spotify"
+    },
+    {
+      "from_kind": "repo",
+      "from": "GNOME__epiphany",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=浏览器|GNOME Web"
+    },
+    {
+      "from_kind": "repo",
+      "from": "JosefNemec__Playnite",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=游戏娱乐"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenRA__OpenRA",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=独立RTS引擎/玩法重构; 原版=Command & Conquer: Red "
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__hydrogen",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-Headless架构(Shopify Hydrogen官方前端框架)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "GreaterWMS__GreaterWMS",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-仓储WMS(替代菜鸟仓储)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Ephigenia__ikea-availability-checker",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-价格与库存监控"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Cocolabs-SAS__cocorico",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-多商家平台(Marketplace/对标淘宝多商家)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Part-DB__Part-DB-server",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-库存管理(零件/耗材库存)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "BuilderIO__builder",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-店铺前端(Headless CMS可视化建站)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Blazity__enterprise-commerce",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-建站/独立站(.NET企业电商)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Blazity__enterprise-commerce",
+      "to": "@nexscope-ai__eCommerce-Skills#33",
+      "evidence": "20261020-smi-close tag-overlap score=4.93 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Blazity__enterprise-commerce",
+      "to": "add-dial-tool",
+      "evidence": "20261020-smi-close tag-overlap score=4.93 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenMage__magento-lts",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-建站/独立站(Magento LTS社区续作)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "VirtoCommerce__vc-platform",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-建站/独立站(.NET企业级电商平台)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__shopify-api-js",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-开放平台SDK(Shopify API官方JS库)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__storefront-api-examples",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-开放平台SDK(Shopify Storefront API示例)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__shopify-app-template-node",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-开放平台SDK(Shopify应用模板)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__cli",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-开放平台工具链(Shopify开发者CLI)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__cli",
+      "to": "@YaoApp__yao",
+      "evidence": "20261020-smi-close tag-overlap score=2.7 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Shopify__cli",
+      "to": "@agenkin__telemetrydeck-analytics",
+      "evidence": "20261020-smi-close tag-overlap score=2.7 (skill 侧 IDF)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Paymenter__Paymenter",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-支付结算(订阅/会员付费替代Stripe Billing)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Grashjs__cmms",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-维护管理CMMS(门店设备维护)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Jackett__Jackett",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=电商-选品/采集(Torrent索引器替代品)"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Open-Shell__Open-Shell-Menu",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=系统/桌面与开始菜单"
+    },
+    {
+      "from_kind": "repo",
+      "from": "LibreHardwareMonitor__LibreHardwareMonitor",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=系统工具"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenVPN__openvpn-gui",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=网络/VPN与虚拟组网"
+    },
+    {
+      "from_kind": "repo",
+      "from": "RSDKModding__RSDKv3-Decompilation",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=补充/Retro Engine v3反编译; 原版=Sonic CD (2011"
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenXcom__OpenXcom",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=补充/引擎复刻; 原版=UFO: Enemy Unknown / X-COM: "
+    },
+    {
+      "from_kind": "repo",
+      "from": "OpenMW__openmw",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=补充/引擎重实现; 原版=The Elder Scrolls III: Morr"
+    },
+    {
+      "from_kind": "repo",
+      "from": "4ian__GDevelop",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=engine | no-code 2D/3D game creator | TS"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Anuken__Mindustry",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=game | automation tower-defense RTS | Ja"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ChromeDevTools__devtools-frontend",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=开发工具|Chrome DevTools"
+    },
+    {
+      "from_kind": "repo",
+      "from": "CleverRaven__Cataclysm-DDA",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=game | roguelike survival | C++ | repo m"
+    },
+    {
+      "from_kind": "repo",
+      "from": "QwenLM__qwen-code",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[PROG/developer tools] 对应主流应用: 开发者通用工具箱 "
+    },
+    {
+      "from_kind": "repo",
+      "from": "RocketChat__Rocket.Chat",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=效率/笔记|团队协作-Rocket.Chat"
+    },
+    {
+      "from_kind": "repo",
+      "from": "SignalApp__Signal-iOS",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=Social Networking"
+    },
+    {
+      "from_kind": "repo",
+      "from": "StockSharp__StockSharp",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Superalgos__Superalgos",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=[TRADE/algorithmic trading] 对应主流应用: 算法交易"
+    },
+    {
+      "from_kind": "repo",
+      "from": "VapourSynth__VapourSynth",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=视频处理框架; 对应后端处理"
+    },
+    {
+      "from_kind": "repo",
+      "from": "ImageMagick__ImageMagick",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=设计/图像处理 → 图像批处理/转换 → 对应主流应用：Photoshop / "
+    },
+    {
+      "from_kind": "repo",
+      "from": "FortAwesome__Font-Awesome",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=设计/字体/图标 → 图标字体库 → 对应主流应用：Figma / Sketch"
+    },
+    {
+      "from_kind": "repo",
+      "from": "KDE__krita",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=设计/手绘/数字绘画 → 数字绘画/美颜 → 对应主流应用：Photoshop "
+    },
+    {
+      "from_kind": "repo",
+      "from": "PhotoPrism__PhotoPrism",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=设计/照片管理 → AI照片管理 → 对应主流应用：Google Photos "
+    },
+    {
+      "from_kind": "repo",
+      "from": "Piwigo__Piwigo",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=设计/照片管理 → 开源相册 → 对应主流应用：Google Photos / "
+    },
+    {
+      "from_kind": "repo",
+      "from": "LycheeOrg__Lychee",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=设计/照片管理 → 轻量相册 → 对应主流应用：Google Photos / "
+    },
+    {
+      "from_kind": "repo",
+      "from": "RawTherapee__RawTherapee",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=设计/美颜修图 → RAW照片处理 → 对应主流应用：Lightroom / 美"
+    },
+    {
+      "from_kind": "repo",
+      "from": "BelledonneCommunications__linphone-desktop",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=通信/SIP软电话"
+    },
+    {
+      "from_kind": "repo",
+      "from": "MTG__essentia",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=音乐/分析 → 开源音频分析 → 对应主流应用：Spotify / 数据分析 /"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Tonejs__Tone.js",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=音乐/制作 → Web音频合成 → 对应主流应用：Logic Pro / FL "
+    },
+    {
+      "from_kind": "repo",
+      "from": "LMMS__lmms",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=音乐/制作 → 开源DAW → 对应主流应用：FL Studio / 逻辑Pro"
+    },
+    {
+      "from_kind": "repo",
+      "from": "FFmpeg__FFmpeg",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=音乐/处理 → 音视频编码库 → 对应主流应用：各播放器 / 录制工具"
+    },
+    {
+      "from_kind": "repo",
+      "from": "Spotifyd__spotifyd",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=音乐/播放 → Spotify开源客户端 → 对应主流应用：Spotify / "
+    },
+    {
+      "from_kind": "repo",
+      "from": "Clementine-player__Clementine",
+      "to": "repo-entry",
+      "evidence": "20261020-smi-close 入口关联: registry kind=repo source=repo-INDEX-20261019 -> repo-entry 检索入口; category=音乐/播放 → 开源音乐播放器 → 对应主流应用：QQ音乐 / 网易云音乐 / "
+    }
+  ],
+  "meta": {
+    "created": "2026-10-11",
+    "version": "first",
+    "edge_count": 30,
+    "purpose": "Connect SMI cognitive skills to CMI executable CLI entries; keep registries and scoring systems separate.",
+    "source_smi": "[external source]",
+    "source_cmi": "[external source]",
+    "recall_queries": [
+      {
+        "query": "git-workflow-and-versioning",
+        "hints": [
+          "git",
+          "branch",
+          "commit",
+          "pull request",
+          "version control",
+          "????",
+          "??",
+          "????",
+          "????"
+        ],
+        "results": [
+          {
+            "skill": "git-advanced-workflows@diegosouzapw__awesome-omni-skills#2",
+            "score": 7.1
+          },
+          {
+            "skill": "git-pushing@diegosouzapw__awesome-omni-skills",
+            "score": 7.1
+          },
+          {
+            "skill": "create-branch@diegosouzapw__awesome-omni-skills",
+            "score": 7.1
+          },
+          {
+            "skill": "ast-refactoring-scripts",
+            "score": 7.1
+          },
+          {
+            "skill": "antfu-create-pr",
+            "score": 7.1
+          },
+          {
+            "skill": "commit-convention",
+            "score": 7.1
+          },
+          {
+            "skill": "dependency-manager",
+            "score": 7.1
+          },
+          {
+            "skill": "semantic-versioning@BagelHole__DevOps-Security-Agent-Skills",
+            "score": 7.1
+          }
+        ]
+      },
+      {
+        "query": "code-refactoring-refactor-clean@diegosouzapw__awesome-omni-skills",
+        "hints": [
+          "refactor",
+          "python",
+          "lint",
+          "format",
+          "simplify code",
+          "????",
+          "????",
+          "????",
+          "???"
+        ],
+        "results": [
+          {
+            "skill": "code-simplifier@diegosouzapw__awesome-omni-skills",
+            "score": 10.4
+          },
+          {
+            "skill": "code-simplification@addyosmani__agent-skills",
+            "score": 10.4
+          },
+          {
+            "skill": "@AHX47__claw-skills-any#3",
+            "score": 10.4
+          },
+          {
+            "skill": "inline-lambda-functions",
+            "score": 10.4
+          },
+          {
+            "skill": "code-simplifier@brycewang-stanford__Auto-Empirical-Research-Skills",
+            "score": 10.4
+          },
+          {
+            "skill": "r-style-guide",
+            "score": 10.4
+          },
+          {
+            "skill": "frontend-dev-guidelines-v2",
+            "score": 10.4
+          },
+          {
+            "skill": "python-guidelines",
+            "score": 10.4
+          }
+        ]
+      },
+      {
+        "query": "data-analysis@brycewang-stanford__Auto-Empirical-Research-Skills",
+        "hints": [
+          "data analysis",
+          "regression",
+          "robustness",
+          "empirical",
+          "????",
+          "????",
+          "???",
+          "??"
+        ],
+        "results": [
+          {
+            "skill": "Full-empirical-analysis-skill-Stata",
+            "score": 21.3
+          },
+          {
+            "skill": "robustness-table",
+            "score": 19.4
+          },
+          {
+            "skill": "bibliometrix-guide",
+            "score": 19.4
+          },
+          {
+            "skill": "did-reviewer",
+            "score": 15.7
+          },
+          {
+            "skill": "r-econometrics",
+            "score": 15.5
+          },
+          {
+            "skill": "causal-inference-r",
+            "score": 15.5
+          },
+          {
+            "skill": "econometrics-r",
+            "score": 15.5
+          },
+          {
+            "skill": "pyfixest",
+            "score": 15.5
+          }
+        ]
+      },
+      {
+        "query": "pdf-official",
+        "hints": [
+          "pdf",
+          "document extraction",
+          "ocr",
+          "convert document",
+          "PDF",
+          "???",
+          "????",
+          "OCR",
+          "????"
+        ],
+        "results": [
+          {
+            "skill": "nano-pdf",
+            "score": 13.5
+          },
+          {
+            "skill": "pdf-extraction-guide",
+            "score": 13.5
+          },
+          {
+            "skill": "markitdown@brycewang-stanford__Auto-Empirical-Research-Skills",
+            "score": 13.5
+          },
+          {
+            "skill": "doc-to-markdown",
+            "score": 13.5
+          },
+          {
+            "skill": "press-pdf",
+            "score": 13.5
+          },
+          {
+            "skill": "ocr-and-documents",
+            "score": 13.5
+          },
+          {
+            "skill": "docx-official@lingxling__awesome-skills-cn",
+            "score": 13.5
+          },
+          {
+            "skill": "pdf-conversion-router",
+            "score": 13.5
+          }
+        ]
+      },
+      {
+        "query": "video-edit",
+        "hints": [
+          "video",
+          "ffmpeg",
+          "transcode",
+          "video editing",
+          "??",
+          "??",
+          "??",
+          "??"
+        ],
+        "results": [
+          {
+            "skill": "youtube-downloader@video-downloader",
+            "score": 7.7
+          },
+          {
+            "skill": "watch",
+            "score": 7.7
+          },
+          {
+            "skill": "chengfeng-export",
+            "score": 7.7
+          },
+          {
+            "skill": "chengfeng-videocut-workbench",
+            "score": 7.7
+          },
+          {
+            "skill": "ffmpeg@alivirgo__Major-AI-Skills",
+            "score": 7.7
+          },
+          {
+            "skill": "losslesscut",
+            "score": 7.7
+          },
+          {
+            "skill": "remotion@alivirgo__Major-AI-Skills",
+            "score": 7.7
+          },
+          {
+            "skill": "media-processor",
+            "score": 7.7
+          }
+        ]
+      }
+    ],
+    "evidence_rule": "Every edge records the dated act4_recall query result, returned skill, observed score, and matching CMI purpose/evidence. No inferred CLI status is encoded in edge endpoints."
+  }
+}

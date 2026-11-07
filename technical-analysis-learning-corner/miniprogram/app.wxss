@@ -1,0 +1,65 @@
+page {
+  min-height: 100%;
+  background: #f8f9fd;
+  color: #131722;
+  font-family: "DouyinSans", "Douyin Meihao", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 28rpx;
+}
+
+view,
+text,
+button,
+input,
+scroll-view {
+  box-sizing: border-box;
+  font-family: "DouyinSans", "Douyin Meihao", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+.latin {
+  font-family: "DouyinSans", "Douyin Meihao", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.page-shell {
+  padding: 30rpx 28rpx 52rpx;
+}
+
+.card {
+  background: #ffffff;
+  border: 1rpx solid #e0e3eb;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 16rpx rgba(19, 23, 34, 0.035);
+}
+
+.eyebrow {
+  color: #787b86;
+  font-size: 22rpx;
+  letter-spacing: 3rpx;
+}
+
+.section-title {
+  margin: 0;
+  color: #131722;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.muted {
+  color: #787b86;
+}
+
+.bull {
+  color: #f23645;
+}
+
+.bear {
+  color: #089981;
+}
+
+.neutral {
+  color: #787b86;
+}

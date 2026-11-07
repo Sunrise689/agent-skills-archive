@@ -1,0 +1,28 @@
+{
+  "profiles": [
+    {
+      "id": "LOCAL-U",
+      "type": "U",
+      "cli": "claude",
+      "model": "your-model",
+      "effort": "high",
+      "enabled": true
+    },
+    {
+      "id": "LOCAL-L",
+      "type": "L",
+      "cli": "codex",
+      "model": "your-model",
+      "effort": "fast",
+      "enabled": true
+    },
+    {
+      "id": "LOCAL-B",
+      "type": "B",
+      "cli": "claude",
+      "model": "your-model",
+      "effort": "max",
+      "enabled": true
+    }
+  ]
+}

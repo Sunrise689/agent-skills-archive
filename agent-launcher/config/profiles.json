@@ -1,0 +1,33 @@
+{
+  "profiles": [
+    {
+      "id": "LOCAL-L",
+      "role": "L",
+      "cli": "Codex CLI",
+      "model": "your-model",
+      "reasoning_effort": "low",
+      "state": "active",
+      "base_prompt": "role"
+    },
+    {
+      "id": "LOCAL-U",
+      "role": "U",
+      "cli": "Claude Code",
+      "model": "your-model",
+      "reasoning_effort": "high",
+      "state": "active",
+      "base_prompt": "role"
+    },
+    {
+      "id": "LOCAL-B",
+      "role": "B",
+      "cli": "Claude Code",
+      "model": "your-model",
+      "reasoning_effort": "max",
+      "state": "active",
+      "base_prompt": "role"
+    }
+  ],
+  "id_aliases": {},
+  "defaults": {}
+}

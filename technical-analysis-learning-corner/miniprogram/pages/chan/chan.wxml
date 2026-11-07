@@ -1,0 +1,52 @@
+<view class="tool-page">
+  <contact-prompt></contact-prompt>
+  <view class="tool-hero">
+    <text class="eyebrow">CHAN STRUCTURE · BETA</text>
+    <text class="tool-title">缠中说禅</text>
+    <text class="tool-lead">把普通K线依次整理为分型、笔与中枢，用结构化方式观察行情。候选买卖点只代表结构条件出现，仍需后续走势确认。</text>
+    <view class="concept-row"><text class="concept-pill">包含处理</text><text class="concept-pill">顶底分型</text><text class="concept-pill">笔与中枢</text><text class="concept-pill">候选信号</text></view>
+  </view>
+
+  <view class="panel">
+    <text class="panel-title">结构计算</text>
+    <text class="panel-subtitle">更长周期更容易形成有意义的笔和中枢；Beta 版建议从 3 年或 5 年开始。</text>
+    <text class="field-label">回看周期</text>
+    <view class="choice-row"><view wx:for="{{yearsList}}" wx:key="*this" class="choice {{years === item ? 'active' : ''}}" data-value="{{item}}" bindtap="selectYears">{{item}} 年</view></view>
+    <text class="field-label">市场代码</text>
+    <view class="symbol-row"><input class="symbol-input" value="{{symbol}}" bindinput="handleInput" confirm-type="search" bindconfirm="run" /><button class="primary-button" loading="{{loading}}" bindtap="run">{{loading ? '计算中' : '查看结构'}}</button></view>
+    <view wx:if="{{symbolSuggestions.length}}" class="symbol-suggestions">
+      <text class="suggestion-title">可识别标的，点击使用</text>
+      <view wx:for="{{symbolSuggestions}}" wx:key="symbol" class="suggestion-item" data-symbol="{{item.symbol}}" bindtap="selectSymbolSuggestion">
+        <view class="suggestion-main"><text class="suggestion-name">{{item.name}}</text><text class="suggestion-type">{{item.type}}</text></view>
+        <text class="suggestion-code">{{item.display}}</text>
+      </view>
+    </view>
+    <text class="service-note">提示：云端分析服务偶尔会有短暂卡顿；如未及时返回，请稍等片刻后再试，或多试几次。</text>
+  </view>
+
+  <view wx:if="{{result}}" class="panel">
+    <view class="result-head"><view><text class="asset-name">{{result.name}}</text><text class="asset-meta">{{result.symbol}} · 更新至 {{result.updatedAt}}</text><text class="asset-meta">{{result.coverageNote}}</text></view><text class="status-chip">Beta</text></view>
+    <view class="chart-box">
+      <canvas type="2d" id="chanCanvas" class="chan-canvas"></canvas>
+      <view class="chan-legend"><view class="chan-legend-item"><view class="chan-stroke"></view><text>笔</text></view><view class="chan-legend-item"><view class="chan-center"></view><text>中枢</text></view><view class="chan-legend-item"><view class="chan-buy"></view><text>买点候选</text></view><view class="chan-legend-item"><view class="chan-sell"></view><text>卖点候选</text></view></view>
+    </view>
+    <view class="metric-grid">
+      <view class="metric"><text class="metric-label">分型</text><text class="metric-value">{{result.counts.fractals}}</text><text class="metric-note">包含处理后的顶底结构</text></view>
+      <view class="metric"><text class="metric-label">笔</text><text class="metric-value">{{result.counts.strokes}}</text><text class="metric-note">相邻有效分型连接</text></view>
+      <view class="metric"><text class="metric-label">中枢</text><text class="metric-value">{{result.counts.centers}}</text><text class="metric-note">连续三笔的价格重叠区</text></view>
+      <view class="metric"><text class="metric-label">近期候选</text><text class="metric-value">{{result.counts.signals}}</text><text class="metric-note">未确认的结构提示</text></view>
+    </view>
+    <view class="notice">{{result.summary}}</view>
+    <text class="section-caption">STRUCTURE CANDIDATES</text>
+    <view wx:if="{{result.signals.length}}" class="signal-list"><view wx:for="{{result.signals}}" wx:key="date" class="signal-row"><view><text>{{item.date}} · {{item.price}}</text><text class="asset-meta">{{item.reason}}</text></view><text class="{{item.type === 'buy' ? 'signal-buy' : 'signal-risk'}}">{{item.label}}</text></view></view>
+    <view wx:else class="empty">近期没有满足条件的候选买卖点</view>
+    <view class="notice warn">{{result.methodNote}}</view>
+  </view>
+
+  <view class="panel">
+    <text class="panel-title">Beta 版如何阅读</text>
+    <view class="method-flow"><view class="method-step"><text class="method-index">01</text><text class="method-name">去包含</text></view><view class="method-step"><text class="method-index">02</text><text class="method-name">找分型</text></view><view class="method-step"><text class="method-index">03</text><text class="method-name">连接成笔</text></view><view class="method-step"><text class="method-index">04</text><text class="method-name">识别中枢</text></view></view>
+    <view class="source-card">{{result ? result.sourceNote : '理论来源为网络作者“缠中说禅”公开发布的《教你炒股票》系列。公开资料常将其与李彪联系，但真实身份存在争议。'}}</view>
+  </view>
+  <text class="disclaimer">本页是独立实现的结构化 Beta 工具，不复制第三方脚本，也不把候选点等同于确定买卖建议。</text>
+</view>

@@ -1,0 +1,15 @@
+{
+  "cx-luna": [
+    "gpt-6-luna"
+  ],
+  "oc-free": [
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free"
+  ],
+  "cc-free": [
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free"
+  ],
+  "ollama-local": [
+    "qwen3:4b-instruct-2507-q4_K_M",
+    "ornith-1.5:9b"
+  ]
+}

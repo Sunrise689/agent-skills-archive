@@ -1,0 +1,9 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+pandas>=2.2,<4
+numpy>=1.26,<3
+scipy>=1.12,<2
+Pillow>=10,<13
+matplotlib>=3.8,<4
+fpdf2>=2.8,<3
+baostock>=0.8.9

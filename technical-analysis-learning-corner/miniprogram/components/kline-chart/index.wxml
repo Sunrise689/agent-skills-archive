@@ -1,0 +1,30 @@
+<view class="chart-shell">
+  <scroll-view
+    id="chartViewport"
+    class="chart-scroll"
+    scroll-x="{{true}}"
+    enhanced="{{true}}"
+    show-scrollbar="{{false}}"
+    scroll-left="{{scrollLeft}}"
+  >
+    <view class="chart-content" style="width: {{canvasWidth}}px; height: 600rpx;">
+      <canvas
+        id="klineCanvas"
+        type="2d"
+        class="chart-canvas"
+        style="width: {{canvasWidth}}px; height: 600rpx;"
+        bindtap="handleTap"
+      ></canvas>
+    </view>
+  </scroll-view>
+  <view wx:if="{{selectedBar}}" class="chart-tip">
+    <text class="latin">{{selectedBar.date}}</text>
+    <text>开 <text class="latin">{{selectedBar.open}}</text></text>
+    <text>高 <text class="latin">{{selectedBar.high}}</text></text>
+    <text>低 <text class="latin">{{selectedBar.low}}</text></text>
+    <text>收 <text class="latin">{{selectedBar.close}}</text></text>
+  </view>
+  <view wx:if="{{!period || !period.bars || !period.bars.length}}" class="empty">
+    暂无可绘制数据
+  </view>
+</view>

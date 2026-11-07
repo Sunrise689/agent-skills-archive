@@ -1,0 +1,24 @@
+@import "../../styles/tool-page.wxss";
+.indicator-tabs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12rpx; margin-top: 20rpx; }
+.indicator-tab { padding: 18rpx; border: 1rpx solid #e4e7ed; border-radius: 16rpx; background: #f8f9fc; }
+.indicator-tab.active { border-color: rgba(41,98,255,.28); background: #eef2ff; box-shadow: inset 3rpx 0 0 #2962ff; }
+.tab-name { display: block; color: #20242d; font-size: 25rpx; font-weight: 750; }
+.tab-copy { display: block; margin-top: 4rpx; color: #93969f; font-size: 19rpx; }
+.indicator-tab.active .tab-name { color: #2962ff; }
+.state-card { margin-top: 20rpx; padding: 24rpx; border-radius: 18rpx; background: linear-gradient(135deg,#f2f5ff,#fff); }
+.state-label { display: block; color: #2962ff; font-size: 20rpx; letter-spacing: 2rpx; }
+.state-text { display: block; margin-top: 10rpx; color: #333842; font-size: 26rpx; line-height: 1.7; font-weight: 600; }
+.parameter-row { display: flex; justify-content: space-between; gap: 20rpx; padding: 16rpx 0; border-bottom: 1rpx solid #eef0f4; font-size: 23rpx; }
+.parameter-key { color: #838690; }.parameter-value { color: #1f2430; font-weight: 700; }
+.id-hero { margin-top: 20rpx; padding: 28rpx; border: 1rpx solid #dfeeea; border-radius: 20rpx; background: linear-gradient(135deg,#effaf7,#fff); }
+.id-character { display: block; color: #087f6c; font-size: 38rpx; font-weight: 800; }
+.id-score { display: block; margin-top: 8rpx; color: #7f838d; font-size: 21rpx; }
+.indicator-chart-box { margin-top: 22rpx; }
+.indicator-canvas { height: 520rpx; }
+.knowledge-link { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 132rpx; margin: 24rpx 0 0; padding: 22rpx 26rpx; box-sizing: border-box; border: 2rpx solid rgba(41,98,255,.24); border-radius: 22rpx; color: #1f3fba; background: linear-gradient(135deg, #eef3ff, #f8faff); text-align: left; box-shadow: 0 10rpx 24rpx rgba(41,98,255,.12); }
+.knowledge-link::after { border: 0; }
+.knowledge-copy { min-width: 0; flex: 1; }
+.knowledge-kicker { display: block; color: #2962ff; font-size: 19rpx; font-weight: 750; letter-spacing: 2rpx; }
+.knowledge-title { display: block; margin-top: 7rpx; color: #1f3fba; font-size: 29rpx; line-height: 1.35; font-weight: 800; }
+.knowledge-subtitle { display: block; margin-top: 5rpx; color: #7a86aa; font-size: 20rpx; line-height: 1.4; }
+.knowledge-arrow { flex: none; margin-left: 18rpx; color: #2962ff; font-size: 52rpx; line-height: 1; font-weight: 300; }

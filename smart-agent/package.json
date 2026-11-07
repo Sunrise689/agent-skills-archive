@@ -1,0 +1,46 @@
+{
+  "name": "smart-agent-cli",
+  "version": "0.2.0",
+  "description": "Traditional pi Agent plus an optional Manager/Spiral control plane",
+  "type": "module",
+  "bin": {
+    "smart-agent": "src/cli.mjs"
+  },
+  "main": "src/cli.mjs",
+  "files": [
+    "src",
+    "scripts/dispatch.mjs",
+    "scripts/cruise-wake.mjs",
+    "core/product-control.ts",
+    "core/prompt-lifecycle.mjs",
+    "core/method-contract.mjs",
+    "core/extension-contract.mjs",
+    "core/spiral-store.mjs",
+    "core/orchestration.mjs",
+    "extensions/loop-seeds/extension.json",
+    "loop_seeds/seeds.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "smart-agent": "node src/cli.mjs",
+    "doctor": "node src/cli.mjs doctor",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:legacy": "node check-mvp.mjs && node experiment-tests/cli-contract.mjs && node experiment-tests/method-contract.mjs"
+  },
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "0.73.1",
+    "typebox": "^1.1.24"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agent",
+    "cli",
+    "pi",
+    "manager",
+    "workflow"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "chains": [
+    {
+      "name": "oc-free-chain",
+      "channel": "opencode",
+      "candidates": [
+        "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free"
+      ]
+    },
+    {
+      "name": "cc-free-chain",
+      "channel": "opencode",
+      "candidates": [
+        "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free"
+      ]
+    },
+    {
+      "name": "ollama-local-chain",
+      "channel": "ollama",
+      "candidates": [
+        "qwen3:4b-instruct-2507-q4_K_M",
+        "ornith-1.5:9b"
+      ]
+    }
+  ],
+  "rules": {
+    "on_all_failed": "failed",
+    "max_attempts": 3,
+    "probe_sec": 25
+  }
+}
